@@ -1,0 +1,2161 @@
+<<<<<<< HEAD
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#mainwrapper {
+	/* Container of all content */
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	font-family: 'Oswald';
+	margin-bottom: 50px;
+	position:relative;
+}
+
+#mainwrapper header {
+	/*Header */
+	background-color: rgba(0,0,0,1.00);
+	font-family:'Oswald';
+	font-style: normal;
+	font-weight: 500;
+	overflow: auto;
+	width: 100%;
+	height: 30%;
+}
+#mainwrapper header #logo {
+	/* Company Logo text */
+	width: 20%;
+	float: left;
+	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: rgba(146,146,146,1.00);
+}
+#container{
+	transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body {
+	background-color: white;
+	background-size: auto;
+    overflow-x: hidden;
+	font-family:'Oswald';
+}
+.dropbtn {
+  background-color: black;
+  border: none;
+  color: #f2f2f2;
+  /*padding-top: 6px;*/
+  font-size: 20px;
+  font-family: 'Oswald';
+  font-style: normal;
+  cursor: pointer;
+}
+.dropbtn:hover{
+	color: rgba(65,143,222,1.00);
+}
+a:hover{color:rgba(128,128,128,1.00);}
+
+#junkdrawer a{text-decoration: none}
+
+a {color: black}
+/* The container <div> - needed to position the dropdown content */
+/*.dropdownContainer{
+  padding: 1% 1% 1% 1%;
+}*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-left: 15px; 
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; 
+  top: 100%;
+  background-color: rgba(0,0,0,1.00);
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 160px;
+  font-size: 10px;
+  font-family:'Oswald';
+  font-style: normal;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgba(255,255,255,1.00);
+  text-decoration: none;
+  padding: 12px 16px;
+  display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: rgba(65,143,222,1.00);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display:block;
+	color: white;
+}		
+
+.dropdown-content .dropdown {
+    position: relative;
+}
+
+.inner-dropdown {
+    display: none;
+    position: absolute;
+    left: -300%; /* Position to the left */
+    top: 0;
+    min-width: 160px;
+	right: 100%;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	color: white;
+	background: black;
+}
+
+/* Show the main dropdown menu on hover */
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+/* Show the nested dropdown menu only when hovering over the "Regression" item */
+.dropdown-content .dropdown:hover .inner-dropdown {
+    display: block;
+	color: rgba(65,143,222,1.00);
+}
+
+ nav {
+	/*Nav bar containing links in header */
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	margin: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+}
+
+.image {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-family: 'Oswald';
+    text-align: center;
+}
+
+.besides-container {
+    position: relative;
+    display: block;
+    horizontal-align: top;
+    width: 300px; /* Adjust as needed */
+}
+
+.besides-image {
+    display: block;
+    width: 100px;
+	height: 300px;
+	margin-right:0px;
+	margin-left:50px;
+}
+
+.besides-overlay {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+	font-size:40px;
+}
+
+.darkBackground{
+	background-color: #2E3193;
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    position: relative;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 30px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-size: 25px;
+    width: 90%; /* Adjust as needed */
+    text-align: left;
+}
+
+.flex-container {
+    display:flex;
+    align-items: center; /* Align items at the start */
+	width:100%;
+}
+
+.overlay-button {
+    position: absolute;
+    top: 60%;
+	bottom:50%;
+    left: 50%;
+    transform: translate(-25%, 100%);
+    padding: 10px 20px;
+    background-color: rgba ; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+    font-family: 'Oswald';
+    font-size: 16px;
+}
+
+.grid-container {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	height:250px;
+	width:250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+	margin-left:50px;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+}
+
+.image-container:hover .hover-overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.image-container {
+    position: relative;
+	width: 250px;
+    height: 250px;
+}
+
+.image-container img {
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+
+#other-games .image-container img{
+	width: 250px;
+	height: 250px;
+	display:block;
+}
+.overlay h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.overlay p {
+    margin: 0;
+	display:none;
+}
+
+.image-container:hover .overlay p {
+    display: block !important;
+}
+
+.image-container:hover .overlay h2 {
+    display: none !important;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blackCover{
+	background:rgba(0, 0, 0, 0.8);
+	height:200px;
+	width:100%;
+	margin-top:100px;
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.partsButton{
+	width:400px;
+	height:60px;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+	margin: 0 0;
+}
+
+.partsButtonTwo{
+	width:600px;
+	height:60px;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+	margin: 0 0;
+}
+
+.partsButtonOne{
+	width:1200px;
+	height:60px;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+	margin: 0 0;
+}
+
+.sectionHeader{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:700px;
+	height: 70px;
+	margin-left:25%;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;	
+}
+
+.topImage{
+	height:200px; 
+	width:100%;
+	display:block;
+	padding-top:100px;
+}
+
+.titleInfo{
+	width:100%;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+}
+.title{
+	color:black;
+	font-size:36px;
+	font-family:'Oswald';
+	text-align:center;
+	margin-bottom:3%;
+}
+
+.subTitle{
+	color:black;
+	font-size:20px;
+	font-family:'Oswald';
+	text-align:center;
+	font-weight:400;
+}
+
+.titleContributors{
+	font-style:italic;
+	margin: 0 auto; 
+	text-align:center;
+	margin-bottom:3%;
+}
+
+.flex-container a{
+	text-decoration:none;
+	color: white;
+}
+
+.flex-container .partsButton:hover, .flex-container .partsButtonTwo:hover, .flex-container .partsButtonOne:hover{
+	background: #418fde;
+
+}
+
+.gameView{
+	width:100%; 
+	height:auto;
+	margin-left:25%;
+}
+.gameFrame{
+	margin-left:0%;
+	width:100%; 
+	height: 600px; 
+	border:none;
+}
+
+.qrCode{
+	background: #418fde;
+	width:75%;
+	border:10px;
+	border-color: white;
+	height:40px;
+	margin-top:-20px;
+	margin-left: 7px;
+	color: white;
+	font-size: 20px;
+	padding-left:10px;
+}
+
+.qrCode:hover{
+	background: black;
+}
+.sideSettings{
+	width:25%;
+	float:left;
+	color:Black;
+	font-size: 12px; 
+	margin-left: -25%;
+	margin-top:-10%;
+}
+
+.settingLine{
+	padding-left:0px; 
+	font-size:14px; 
+	margin-left: 30px;
+}
+
+.settingLine h4{
+	font-weight: 400;
+}
+
+.discussionSection {
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+    width: 75%;             /* Makes sure the section takes the full width of the container */
+}
+
+.discussionSubsection{
+	padding: 2%;
+	margin: 2% 2%;
+	width: 100%;
+	float: left;
+	font-family: 'Oswald';
+	font-size: 20px;
+	line-height:1.65;
+	height:auto;
+	border:3px;
+	border-style:solid; 
+	border-color:#000;
+}
+
+.discussionSubsection li{
+	margin-left:10%;
+	margin-right:3%;
+	font-weight:normal;
+}
+
+.discussionSubsection p{
+	font-weight: normal;
+	margin-left:5% ; /* margin: top-down left-right*/
+	margin-right:3%;
+}
+
+.discussionSubsection h4{ /* regular non-bold*/
+	font-weight: normal;
+	margin-left:3%;
+	margin-right:3%;
+}
+
+.discussionSubsection h3{ /* bold heading */
+	font-weight: bold;
+	font-size:20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+
+.funFact{
+	width:100%;
+	font-size:16px;
+	margin-left:-3%;
+	font-weight: 400;
+}
+
+.storiesBlockText{
+	width: 220px;
+	height:220px;
+	display:none;
+	margin-top:-50px;
+	font-size:20px;
+	text-align:left;
+}
+
+table{
+	width:80%;
+	margin-left:10%;
+}	
+
+table td{
+	height:50px;
+	font-size:20px;
+	padding:10px;
+}
+
+table th{
+	height:50px;
+	width:80%;
+	font-size:20px;
+	font-weight:bold;
+ 	background-color: #418fde;
+}
+table tr{
+	padding-left:5px;
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+#link{
+	color:gray;
+}
+#second-wrapper h4, #second-wrapper li{
+	font-weight: normal;
+	font-size:20px;
+	margin: 10px 30%;
+}
+
+#third-wrapper h4, #third-wrapper li, #fourth-wrapper h4, #fourth-wrapper li{
+	font-weight: normal;
+	font-size:20px;
+	margin: 10px 30%;
+}
+
+#mainContent h4{
+	font-weight: normal;
+	font-size:20px;
+	margin: 10px 30px;
+}
+
+
+#content #mainContent h1, #content #mainContent h2 {
+	/* Styling for main headings */
+	color: rgba(184,14,14,1.00);
+}
+#content #mainContent h3 {
+    /*Captions ot Taglines */
+    font-family: source-sans-pro, sans-serif, 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    color: rgba(128,125,125,1.00);
+}
+#content #mainContent #bannerImage {
+	/*Container for main banner image */
+	width: 65%;
+	padding-left: 16.5%;
+}
+#content #mainContent p {
+	/* All paragraphs under maincontent */
+	color: rgba(138,6,18,1.00);
+	font-weight: 200;
+	text-align: justify;
+	font-size: 18px;
+	font-family: 'Oswald';
+}
+#content #mainContent #authorInfo {
+	/* Author info section */
+	background-color: rgba(170,10,10,1.00);
+}
+#content #mainContent #authorInfo h2, #content #mainContent #authorInfo p {
+	color: rgba(255,255,255,1.00);
+	padding-left: 2%;
+	padding-top: 11px;
+	
+}
+#content #mainContent #authorInfo p {
+	color: rgba(255,255,255,1.00);
+	padding-left: 2%;
+	padding-top: 0px;
+	padding-bottom: 11px;
+	padding-right: 2%;
+}
+article {
+	/* Footer articles */
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: justify;
+	font-family: Georgia, 'Oswald';
+}
+article h3 {
+	/* Footer article titles */
+	text-align: center;
+	font-family: montserrat, sans-serif, 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+}
+#mainContent {
+	/* Container for the blog post in individal blog view */
+	padding-left: 2%;
+	width: 100%;
+	float: left;
+	padding-right: 2%;
+	padding-top: 41px;
+	font-family: 'Oswald';
+	font-size: 18px
+	
+}
+#mainwrapper #content #sidebar {
+	/* Sidebar*/
+	width: 19%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: left;
+	background-color: rgba(246,246,246,1.00);
+	margin-top: 150px;
+	padding-top: 32px;
+}
+
+#ThirdWrapper{
+	margin-top: 500px;
+}
+
+h2{
+	color: black;
+	margin:30px;
+	font-weight: normal;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+/*  --- replaced in discussionSection h3 --- if needed uncomment
+h3{
+	color: black;
+	margin:30px;
+	font-weight: normal;
+	font-size: 25px;
+}
+*/
+.lowMenu{
+	color:white;
+	font-size:20px;
+	text-decoration:none;
+	
+	
+}
+
+.highMenu{
+	color:white;
+	font-size:30px;
+}
+
+.lowMenu :hover, .highMenu :hover{
+	color: #418fde;
+	text-decoration: none;
+}
+.samples{
+	width: 100px;
+}
+
+#content #sidebar input {
+	/* Search box in sidebar */
+	width: 98%;
+	height: 32px;
+}
+#content #sidebar #adimage {
+	/* Container for Image in sidebar */
+	width: 100%;
+	background-color: rgba(208,207,207,1.00);
+	margin-top: 46px;
+	float: none;
+	overflow: auto;
+}
+nav ul li {
+	list-style-type: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+nav ul {
+	padding-left: 0%;
+}
+
+#footerbar {
+	/* Footer bar at the bottom of the page */
+	height: 18px;
+	clear: both;
+	background-color: rgba(208,207,207,1.00);
+	width: 100%;
+}
+footer {
+	/* Container for footer artices */
+	width: 71%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.notOnDesktop {
+	/*element to be displayed only in mobile view and tabet view */
+	display: none;
+}
+#mainContent #bannerImage img {
+	/* Actual banner image */
+	width: 100%;
+}
+#sidebar #adimage img {
+	/* Image in sidebar */
+	width: 100%;
+	float: left;
+}
+#mainwrapper header nav a {
+	/* Links in header */
+	color: rgba(146,146,146,1.00);
+	text-decoration: none;
+}
+
+/* Tablet view */
+@media screen and (max-width : 1200px ){
+.notOnDesktop {
+	/* Search box shown only in mobile view and Tablet view */
+	display: block;
+	text-align: right;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 96%;
+}
+#content .notOnDesktop input {
+	height: 28px;
+}
+#mainContent {
+	/* Container for the blog post */
+	padding-top: 0px;
+	float: none;
+	width: 96%;
+}
+#sidebar input {
+	/* Search box in sidebar */
+	display: none;
+}
+#mainwrapper #content #sidebar {
+	/* Sidebar*/
+	float: none;
+	width: 92%;
+	padding-top: 13px;
+	overflow: auto;
+	margin-top: 3px;
+	margin-left: 2%;
+	padding-bottom: 13px;
+}
+#content #sidebar #adimage {
+	/* Image in sidebar */
+	width: 60%;
+	margin-top: 0px;
+	float: left;
+}
+#content #sidebar nav {
+	/* Navigation links in sidebar */
+	width: 36%;
+	float: left;
+	padding-left: 4%;
+}
+#sidebar nav ul {
+	margin-top: 0px;
+}
+footer {
+	/* Footer region */
+	width: 96%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+#content footer article {
+	/*Each footer article */
+	width: 46%;
+}
+#mainwrapper header {
+	/* Header */
+	width: 40%;
+}
+}
+
+/* Mobile view */
+@media screen and (max-width : 1635px ){
+#mainwrapper header #logo {
+	/* Company Logo text in header */
+	width: 96%;
+	margin-left: 2%;
+}
+#mainwrapper header nav {
+	/*navigation links in header */
+	text-align: center;
+	background-color: rgba(255,255,255,1.00);
+	width: 98%;
+}
+#content #sidebar #adimage {
+	/* Container for image in sidebar */
+	width: 100%;
+}
+#content #sidebar nav {
+	/* Navigation bar for links in sidebar */
+	width: 96%;
+	padding-top: 7px;
+}
+#sidebar nav ul li {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+#mainwrapper #content #sidebar {
+	/* sidebar */
+	padding-bottom: 0px;
+}
+#content .notOnDesktop {
+	/* Search box shown only in mobile and tablet view */
+	width: 100%;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#content .notOnDesktop input {
+	width: 80%;
+	text-align: center;
+}
+
+#content footer article {
+	/* Each foter article */
+	width: 96%;
+}
+}
+
+
+
+
+#nav-wrapper {
+	
+			background: black;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 70px;
+	        z-index:1;
+	margin:auto;
+			}		
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Split the screen in half */
+.split {
+
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.Explore {
+	width: 100%;
+	height:  200px;
+}
+
+.junkdrawer {
+	width: 100%;
+	font-family: 'Oswald';	
+	background-image: url("../images/bgMain.jpg"); 
+	height: 23rem;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.grayBackground{
+    width:1000px;
+    height:200px;
+	padding-left:150px;
+    background: #e6e5e4;
+}
+
+.blueBackground{
+	width:300px;
+    height:100px;
+    background: #418fde;
+	border:medium;
+	border-color:black;
+}
+
+.blueBackgroundv2{
+	margin-left:50px;
+	margin-top:10px;
+	width:300px;
+    height:300px;
+    background: #418fde;
+	border:medium;
+	border-color:black;
+}
+
+#Main Article {
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+#MAIN {
+	width:100%;
+}
+
+#rightContent {
+	float:right;
+	width: 20%;
+}
+
+.center {
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#Acknolwedgment {
+  width: 310px;
+  height: 200px;
+  background-color: darkgray
+}
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+	position: fixed; /* Position them relative to the browser window */
+	left: -1%; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 5.7%; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: red; /* White text color */
+	border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#part1 {
+	top: 80px;
+	background-color: #D7D3D3;
+}
+
+#part2 {
+	top: 140px;
+	background-color: #B4B0B0;
+}
+
+#part3 {
+	top: 200px;
+	background-color: #949494;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #B4B0B0;
+}
+
+.button1:hover {
+  background-color: #B4B0B0;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #B4B0B0;
+}
+
+.button2:hover {
+  background-color: #B4B0B0;
+  color: white;
+}
+
+=======
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#mainwrapper {
+	/* Container of all content */
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	font-family: 'Oswald';
+	margin-bottom: 50px;
+	position:relative;
+}
+
+#mainwrapper header {
+	/*Header */
+	background-color: rgba(0,0,0,1.00);
+	font-family:'Oswald';
+	font-style: normal;
+	font-weight: 500;
+	overflow: auto;
+	width: 100%;
+	height: 30%;
+}
+#mainwrapper header #logo {
+	/* Company Logo text */
+	width: 20%;
+	float: left;
+	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: rgba(146,146,146,1.00);
+}
+#container{
+	transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body {
+	background-color: white;
+	background-size: auto;
+    overflow-x: hidden;
+	font-family:'Oswald';
+}
+.dropbtn {
+  background-color: black;
+  border: none;
+  color: #f2f2f2;
+  /*padding-top: 6px;*/
+  font-size: 20px;
+  font-family: 'Oswald';
+  font-style: normal;
+  cursor: pointer;
+}
+.dropbtn:hover{
+	color: rgba(65,143,222,1.00);
+}
+a:hover{color:rgba(128,128,128,1.00);}
+
+#junkdrawer a{text-decoration: none}
+
+a {color: black}
+/* The container <div> - needed to position the dropdown content */
+/*.dropdownContainer{
+  padding: 1% 1% 1% 1%;
+}*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-left: 15px; 
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; 
+  top: 100%;
+  background-color: rgba(0,0,0,1.00);
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 160px;
+  font-size: 10px;
+  font-family:'Oswald';
+  font-style: normal;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgba(255,255,255,1.00);
+  text-decoration: none;
+  padding: 12px 16px;
+  display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: rgba(65,143,222,1.00);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display:block;
+	color: white;
+}		
+
+.dropdown-content .dropdown {
+    position: relative;
+}
+
+.inner-dropdown {
+    display: none;
+    position: absolute;
+    left: -300%; /* Position to the left */
+    top: 0;
+    min-width: 160px;
+	right: 100%;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	color: white;
+	background: black;
+}
+
+/* Show the main dropdown menu on hover */
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+/* Show the nested dropdown menu only when hovering over the "Regression" item */
+.dropdown-content .dropdown:hover .inner-dropdown {
+    display: block;
+	color: rgba(65,143,222,1.00);
+}
+
+ nav {
+	/*Nav bar containing links in header */
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	margin: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+}
+
+.image {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-family: 'Oswald';
+    text-align: center;
+}
+
+.besides-container {
+    position: relative;
+    display: block;
+    horizontal-align: top;
+    width: 300px; /* Adjust as needed */
+}
+
+.besides-image {
+    display: block;
+    width: 100px;
+	height: 300px;
+	margin-right:0px;
+	margin-left:50px;
+}
+
+.besides-overlay {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+    text-align: center;
+	font-size:40px;
+}
+
+.darkBackground{
+	background-color: #2E3193;
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    position: relative;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 30px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-size: 25px;
+    width: 90%; /* Adjust as needed */
+    text-align: left;
+}
+
+.flex-container {
+    display:flex;
+    align-items: center; /* Align items at the start */
+	width:100%;
+}
+
+.overlay-button {
+    position: absolute;
+    top: 60%;
+	bottom:50%;
+    left: 50%;
+    transform: translate(-25%, 100%);
+    padding: 10px 20px;
+    background-color: rgba ; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+    font-family: 'Oswald';
+    font-size: 16px;
+}
+
+.grid-container {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	height:250px;
+	width:250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+	margin-left:50px;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+}
+
+.image-container:hover .hover-overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.image-container {
+    position: relative;
+	width: 250px;
+    height: 250px;
+}
+
+.image-container img {
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+
+#other-games .image-container img{
+	width: 250px;
+	height: 250px;
+	display:block;
+}
+.overlay h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.overlay p {
+    margin: 0;
+	display:none;
+}
+
+.image-container:hover .overlay p {
+    display: block !important;
+}
+
+.image-container:hover .overlay h2 {
+    display: none !important;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blackCover{
+	background:rgba(0, 0, 0, 0.8);
+	height:200px;
+	width:100%;
+	margin-top:100px;
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.partsButton{
+	width:400px;
+	height:60px;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+	margin: 0 0;
+}
+
+.partsButtonTwo{
+	width:600px;
+	height:60px;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+	margin: 0 0;
+}
+
+.partsButtonOne{
+	width:1200px;
+	height:60px;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+	margin: 0 0;
+}
+
+.sectionHeader{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:700px;
+	height: 70px;
+	margin-left:25%;
+	background: black;
+	border: 2px solid white; 
+	color: white;
+	font-size:30px;
+	text-align:center;	
+}
+
+.topImage{
+	height:200px; 
+	width:100%;
+	display:block;
+	padding-top:100px;
+}
+
+.titleInfo{
+	width:100%;
+	text-align:center;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+}
+.title{
+	color:black;
+	font-size:36px;
+	font-family:'Oswald';
+	text-align:center;
+	margin-bottom:3%;
+}
+
+.subTitle{
+	color:black;
+	font-size:20px;
+	font-family:'Oswald';
+	text-align:center;
+	font-weight:400;
+}
+
+.titleContributors{
+	font-style:italic;
+	margin: 0 auto; 
+	text-align:center;
+	margin-bottom:3%;
+}
+
+.flex-container a{
+	text-decoration:none;
+	color: white;
+}
+
+.flex-container .partsButton:hover, .flex-container .partsButtonTwo:hover, .flex-container .partsButtonOne:hover{
+	background: #418fde;
+
+}
+
+.gameView{
+	width:100%; 
+	height:auto;
+	margin-left:25%;
+}
+.gameFrame{
+	margin-left:0%;
+	width:100%; 
+	height: 600px; 
+	border:none;
+}
+
+.qrCode{
+	background: #418fde;
+	width:75%;
+	border:10px;
+	border-color: white;
+	height:40px;
+	margin-top:-20px;
+	margin-left: 7px;
+	color: white;
+	font-size: 20px;
+	padding-left:10px;
+}
+
+.qrCode:hover{
+	background: black;
+}
+.sideSettings{
+	width:25%;
+	float:left;
+	color:Black;
+	font-size: 12px; 
+	margin-left: -25%;
+	margin-top:-10%;
+}
+
+.settingLine{
+	padding-left:0px; 
+	font-size:14px; 
+	margin-left: 30px;
+}
+
+.settingLine h4{
+	font-weight: 400;
+}
+
+.discussionSection {
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+    width: 75%;             /* Makes sure the section takes the full width of the container */
+}
+
+.discussionSubsection{
+	padding: 2%;
+	margin: 2% 2%;
+	width: 100%;
+	float: left;
+	font-family: 'Oswald';
+	font-size: 20px;
+	line-height:1.65;
+	height:auto;
+	border:3px;
+	border-style:solid; 
+	border-color:#000;
+}
+
+.discussionSubsection li{
+	margin-left:10%;
+	margin-right:3%;
+	font-weight:normal;
+}
+
+.discussionSubsection p{
+	font-weight: normal;
+	margin-left:5% ; /* margin: top-down left-right*/
+	margin-right:3%;
+}
+
+.discussionSubsection h4{ /* regular non-bold*/
+	font-weight: normal;
+	margin-left:3%;
+	margin-right:3%;
+}
+
+.discussionSubsection h3{ /* bold heading */
+	font-weight: bold;
+	font-size:20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+
+.funFact{
+	width:100%;
+	font-size:16px;
+	margin-left:-3%;
+	font-weight: 400;
+}
+
+.storiesBlockText{
+	width: 220px;
+	height:220px;
+	display:none;
+	margin-top:-50px;
+	font-size:20px;
+	text-align:left;
+}
+
+table{
+	width:80%;
+	margin-left:10%;
+}	
+
+table td{
+	height:50px;
+	font-size:20px;
+	padding:10px;
+}
+
+table th{
+	height:50px;
+	width:80%;
+	font-size:20px;
+	font-weight:bold;
+ 	background-color: #418fde;
+}
+table tr{
+	padding-left:5px;
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+#link{
+	color:gray;
+}
+#second-wrapper h4, #second-wrapper li{
+	font-weight: normal;
+	font-size:20px;
+	margin: 10px 30%;
+}
+
+#third-wrapper h4, #third-wrapper li, #fourth-wrapper h4, #fourth-wrapper li{
+	font-weight: normal;
+	font-size:20px;
+	margin: 10px 30%;
+}
+
+#mainContent h4{
+	font-weight: normal;
+	font-size:20px;
+	margin: 10px 30px;
+}
+
+
+#content #mainContent h1, #content #mainContent h2 {
+	/* Styling for main headings */
+	color: rgba(184,14,14,1.00);
+}
+#content #mainContent h3 {
+    /*Captions ot Taglines */
+    font-family: source-sans-pro, sans-serif, 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    color: rgba(128,125,125,1.00);
+}
+#content #mainContent #bannerImage {
+	/*Container for main banner image */
+	width: 65%;
+	padding-left: 16.5%;
+}
+#content #mainContent p {
+	/* All paragraphs under maincontent */
+	color: rgba(138,6,18,1.00);
+	font-weight: 200;
+	text-align: justify;
+	font-size: 18px;
+	font-family: 'Oswald';
+}
+#content #mainContent #authorInfo {
+	/* Author info section */
+	background-color: rgba(170,10,10,1.00);
+}
+#content #mainContent #authorInfo h2, #content #mainContent #authorInfo p {
+	color: rgba(255,255,255,1.00);
+	padding-left: 2%;
+	padding-top: 11px;
+	
+}
+#content #mainContent #authorInfo p {
+	color: rgba(255,255,255,1.00);
+	padding-left: 2%;
+	padding-top: 0px;
+	padding-bottom: 11px;
+	padding-right: 2%;
+}
+article {
+	/* Footer articles */
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: justify;
+	font-family: Georgia, 'Oswald';
+}
+article h3 {
+	/* Footer article titles */
+	text-align: center;
+	font-family: montserrat, sans-serif, 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+}
+#mainContent {
+	/* Container for the blog post in individal blog view */
+	padding-left: 2%;
+	width: 100%;
+	float: left;
+	padding-right: 2%;
+	padding-top: 41px;
+	font-family: 'Oswald';
+	font-size: 18px
+	
+}
+#mainwrapper #content #sidebar {
+	/* Sidebar*/
+	width: 19%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: left;
+	background-color: rgba(246,246,246,1.00);
+	margin-top: 150px;
+	padding-top: 32px;
+}
+
+#ThirdWrapper{
+	margin-top: 500px;
+}
+
+h2{
+	color: black;
+	margin:30px;
+	font-weight: normal;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+/*  --- replaced in discussionSection h3 --- if needed uncomment
+h3{
+	color: black;
+	margin:30px;
+	font-weight: normal;
+	font-size: 25px;
+}
+*/
+.lowMenu{
+	color:white;
+	font-size:20px;
+	text-decoration:none;
+	
+	
+}
+
+.highMenu{
+	color:white;
+	font-size:30px;
+}
+
+.lowMenu :hover, .highMenu :hover{
+	color: #418fde;
+	text-decoration: none;
+}
+.samples{
+	width: 100px;
+}
+
+#content #sidebar input {
+	/* Search box in sidebar */
+	width: 98%;
+	height: 32px;
+}
+#content #sidebar #adimage {
+	/* Container for Image in sidebar */
+	width: 100%;
+	background-color: rgba(208,207,207,1.00);
+	margin-top: 46px;
+	float: none;
+	overflow: auto;
+}
+nav ul li {
+	list-style-type: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+nav ul {
+	padding-left: 0%;
+}
+
+#footerbar {
+	/* Footer bar at the bottom of the page */
+	height: 18px;
+	clear: both;
+	background-color: rgba(208,207,207,1.00);
+	width: 100%;
+}
+footer {
+	/* Container for footer artices */
+	width: 71%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.notOnDesktop {
+	/*element to be displayed only in mobile view and tabet view */
+	display: none;
+}
+#mainContent #bannerImage img {
+	/* Actual banner image */
+	width: 100%;
+}
+#sidebar #adimage img {
+	/* Image in sidebar */
+	width: 100%;
+	float: left;
+}
+#mainwrapper header nav a {
+	/* Links in header */
+	color: rgba(146,146,146,1.00);
+	text-decoration: none;
+}
+
+/* Tablet view */
+@media screen and (max-width : 1200px ){
+.notOnDesktop {
+	/* Search box shown only in mobile view and Tablet view */
+	display: block;
+	text-align: right;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 96%;
+}
+#content .notOnDesktop input {
+	height: 28px;
+}
+#mainContent {
+	/* Container for the blog post */
+	padding-top: 0px;
+	float: none;
+	width: 96%;
+}
+#sidebar input {
+	/* Search box in sidebar */
+	display: none;
+}
+#mainwrapper #content #sidebar {
+	/* Sidebar*/
+	float: none;
+	width: 92%;
+	padding-top: 13px;
+	overflow: auto;
+	margin-top: 3px;
+	margin-left: 2%;
+	padding-bottom: 13px;
+}
+#content #sidebar #adimage {
+	/* Image in sidebar */
+	width: 60%;
+	margin-top: 0px;
+	float: left;
+}
+#content #sidebar nav {
+	/* Navigation links in sidebar */
+	width: 36%;
+	float: left;
+	padding-left: 4%;
+}
+#sidebar nav ul {
+	margin-top: 0px;
+}
+footer {
+	/* Footer region */
+	width: 96%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+#content footer article {
+	/*Each footer article */
+	width: 46%;
+}
+#mainwrapper header {
+	/* Header */
+	width: 40%;
+}
+}
+
+/* Mobile view */
+@media screen and (max-width : 1635px ){
+#mainwrapper header #logo {
+	/* Company Logo text in header */
+	width: 96%;
+	margin-left: 2%;
+}
+#mainwrapper header nav {
+	/*navigation links in header */
+	text-align: center;
+	background-color: rgba(255,255,255,1.00);
+	width: 98%;
+}
+#content #sidebar #adimage {
+	/* Container for image in sidebar */
+	width: 100%;
+}
+#content #sidebar nav {
+	/* Navigation bar for links in sidebar */
+	width: 96%;
+	padding-top: 7px;
+}
+#sidebar nav ul li {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+#mainwrapper #content #sidebar {
+	/* sidebar */
+	padding-bottom: 0px;
+}
+#content .notOnDesktop {
+	/* Search box shown only in mobile and tablet view */
+	width: 100%;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#content .notOnDesktop input {
+	width: 80%;
+	text-align: center;
+}
+
+#content footer article {
+	/* Each foter article */
+	width: 96%;
+}
+}
+
+
+
+
+#nav-wrapper {
+	
+			background: black;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 70px;
+	        z-index:1;
+	margin:auto;
+			}		
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Split the screen in half */
+.split {
+
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.Explore {
+	width: 100%;
+	height:  200px;
+}
+
+.junkdrawer {
+	width: 100%;
+	font-family: 'Oswald';	
+	background-image: url("../images/bgMain.jpg"); 
+	height: 23rem;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.grayBackground{
+    width:1000px;
+    height:200px;
+	padding-left:150px;
+    background: #e6e5e4;
+}
+
+.blueBackground{
+	width:300px;
+    height:100px;
+    background: #418fde;
+	border:medium;
+	border-color:black;
+}
+
+.blueBackgroundv2{
+	margin-left:50px;
+	margin-top:10px;
+	width:300px;
+    height:300px;
+    background: #418fde;
+	border:medium;
+	border-color:black;
+}
+
+#Main Article {
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+#MAIN {
+	width:100%;
+}
+
+#rightContent {
+	float:right;
+	width: 20%;
+}
+
+.center {
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#Acknolwedgment {
+  width: 310px;
+  height: 200px;
+  background-color: darkgray
+}
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+	position: fixed; /* Position them relative to the browser window */
+	left: -1%; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 5.7%; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: red; /* White text color */
+	border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#part1 {
+	top: 80px;
+	background-color: #D7D3D3;
+}
+
+#part2 {
+	top: 140px;
+	background-color: #B4B0B0;
+}
+
+#part3 {
+	top: 200px;
+	background-color: #949494;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #B4B0B0;
+}
+
+.button1:hover {
+  background-color: #B4B0B0;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #B4B0B0;
+}
+
+.button2:hover {
+  background-color: #B4B0B0;
+  color: white;
+}
+
+>>>>>>> 295fe31 (Adding recidivism)
