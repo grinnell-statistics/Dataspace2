@@ -1,0 +1,519 @@
+@charset "UTF-8";
+
+
+#mainwrapper header {
+	/*Header */
+	background-color: rgba(0,0,0,1.00);
+	font-family: montserrat, 'Open Sans';
+	font-style: normal;
+	font-weight: 500;
+	overflow: auto;
+	width: 100%;
+	height: 30%;
+}
+#mainwrapper header #logo {
+	/* Company Logo text */
+	width: 20%;
+	float: left;
+	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: rgba(146,146,146,1.00);
+}
+body {
+	background-color: white;
+	background-size: auto;
+    overflow-x: hidden;
+}
+.dropbtn {
+  background-color: black;
+  border: none;
+  color: #f2f2f2;
+  padding-top: 6px;
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-style: normal;
+}
+a:hover{color:rgba(128,128,128,1.00);}
+
+#junkdrawer a{text-decoration: none}
+
+a {color: black}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  width: 100%;
+  background-color: rgba(255,255,255,1.00);
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgba(0,0,0,1.00);
+  text-decoration: none;
+  display: inline-block;
+}
+
+	
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(200,200,200,1.00);
+width: 100%}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {position:relative; display:grid}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgba(66,66,66,1.00);}
+
+ nav {
+	/*Nav bar containing links in header */
+	
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	margin: auto;
+}
+
+#content #mainContent h1, #content #mainContent h2 {
+	/* Styling for main headings */
+	color: rgba(184,14,14,1.00);
+}
+#content #mainContent h3 {
+    /*Captions ot Taglines */
+    font-family: source-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: rgba(128,125,125,1.00);
+}
+#content #mainContent #bannerImage {
+	/*Container for main banner image */
+	width: 65%;
+	padding-left: 16.5%;
+}
+#content #mainContent p {
+	/* All paragraphs under maincontent */
+	color: rgba(138,6,18,1.00);
+	font-weight: 200;
+	text-align: justify;
+	font-size: 18px;
+	font-family: Georgia;
+}
+#content #mainContent #authorInfo {
+	/* Author info section */
+	background-color: rgba(170,10,10,1.00);
+}
+#content #mainContent #authorInfo h2, #content #mainContent #authorInfo p {
+	color: rgba(255,255,255,1.00);
+	padding-left: 2%;
+	padding-top: 11px;
+}
+#content #mainContent #authorInfo p {
+	color: rgba(255,255,255,1.00);
+	padding-left: 2%;
+	padding-top: 0px;
+	padding-bottom: 11px;
+	padding-right: 2%;
+}
+article {
+	/* Footer articles */
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: justify;
+	font-family: Georgia;
+}
+article h3 {
+	/* Footer article titles */
+	text-align: center;
+	font-family: montserrat, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+#mainContent {
+	/* Container for the blog post in individal blog view */
+	padding-left: 2%;
+	width: 100%;
+	float: left;
+	padding-right: 2%;
+	padding-top: 41px;
+	font-family: Georgia;
+	font-size: 18px
+	
+}
+#mainwrapper #content #sidebar {
+	/* Sidebar*/
+	width: 19%;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: left;
+	background-color: rgba(246,246,246,1.00);
+	margin-top: 150px;
+	padding-top: 32px;
+}
+#mainwrapper {
+	/* Container of all content */
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	font-family: Georgia;
+}
+#content #sidebar input {
+	/* Search box in sidebar */
+	width: 98%;
+	height: 32px;
+}
+#content #sidebar #adimage {
+	/* Container for Image in sidebar */
+	width: 100%;
+	background-color: rgba(208,207,207,1.00);
+	margin-top: 46px;
+	float: none;
+	overflow: auto;
+}
+nav ul li {
+	list-style-type: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+nav ul {
+	padding-left: 0%;
+}
+
+#footerbar {
+	/* Footer bar at the bottom of the page */
+	height: 18px;
+	clear: both;
+	background-color: rgba(208,207,207,1.00);
+	width: 100%;
+}
+footer {
+	/* Container for footer artices */
+	width: 71%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.notOnDesktop {
+	/*element to be displayed only in mobile view and tabet view */
+	display: none;
+}
+#mainContent #bannerImage img {
+	/* Actual banner image */
+	width: 100%;
+}
+#sidebar #adimage img {
+	/* Image in sidebar */
+	width: 100%;
+	float: left;
+}
+#mainwrapper header nav a {
+	/* Links in header */
+	color: rgba(146,146,146,1.00);
+	text-decoration: none;
+}
+
+/* Tablet view */
+@media screen and (max-width : 1200px ){
+.notOnDesktop {
+	/* Search box shown only in mobile view and Tablet view */
+	display: block;
+	text-align: right;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 96%;
+}
+#content .notOnDesktop input {
+	height: 28px;
+}
+#mainContent {
+	/* Container for the blog post */
+	padding-top: 0px;
+	float: none;
+	width: 96%;
+}
+#sidebar input {
+	/* Search box in sidebar */
+	display: none;
+}
+#mainwrapper #content #sidebar {
+	/* Sidebar*/
+	float: none;
+	width: 92%;
+	padding-top: 13px;
+	overflow: auto;
+	margin-top: 3px;
+	margin-left: 2%;
+	padding-bottom: 13px;
+}
+#content #sidebar #adimage {
+	/* Image in sidebar */
+	width: 60%;
+	margin-top: 0px;
+	float: left;
+}
+#content #sidebar nav {
+	/* Navigation links in sidebar */
+	width: 36%;
+	float: left;
+	padding-left: 4%;
+}
+#sidebar nav ul {
+	margin-top: 0px;
+}
+footer {
+	/* Footer region */
+	width: 96%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+#content footer article {
+	/*Each footer article */
+	width: 46%;
+}
+#mainwrapper header {
+	/* Header */
+	width: 40%;
+}
+}
+
+/* Mobile view */
+@media screen and (max-width : 1635px ){
+#mainwrapper header #logo {
+	/* Company Logo text in header */
+	width: 96%;
+	margin-left: 2%;
+}
+#mainwrapper header nav {
+	/*navigation links in header */
+	text-align: center;
+	background-color: rgba(255,255,255,1.00);
+	width: 98%;
+}
+#content #sidebar #adimage {
+	/* Container for image in sidebar */
+	width: 100%;
+}
+#content #sidebar nav {
+	/* Navigation bar for links in sidebar */
+	width: 96%;
+	padding-top: 7px;
+}
+#sidebar nav ul li {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+#mainwrapper #content #sidebar {
+	/* sidebar */
+	padding-bottom: 0px;
+}
+#content .notOnDesktop {
+	/* Search box shown only in mobile and tablet view */
+	width: 100%;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#content .notOnDesktop input {
+	width: 80%;
+	text-align: center;
+}
+#content #mainContent h3 {
+	/* Title under maincontent, if any */
+	font-size: 14px;
+}
+#content footer article {
+	/* Each foter article */
+	width: 96%;
+}
+}
+
+
+
+#nav-wrapper {
+	
+			background: black;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 70px;
+	        z-index:1;
+	margin:auto;
+			}		
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Split the screen in half */
+.split {
+
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+.Explore {
+	width: 100%;
+	height:  200px;
+}
+
+.junkdrawer {
+	width: 100%;
+	font-family: Georgia;	
+	background-image: url("../images/White Tile Background.jpg"); 
+	height: 23rem;
+}
+
+
+
+#Main Article {
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+#MAIN {
+	width:100%;
+}
+
+#rightContent {
+	float:left;
+	width: 20%;
+}
+
+.center {
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#Acknolwedgment {
+  width: 310px;
+  height: 200px;
+  background-color: darkgray
+}
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+	position: fixed; /* Position them relative to the browser window */
+	left: -1%; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 5.7%; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: blue; /* White text color */
+	border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#part1 {
+	top: 80px;
+	background-color: #D7D3D3;
+}
+
+#part2 {
+	top: 140px;
+	background-color: #B4B0B0;
+}
+
+#part3 {
+	top: 200px;
+	background-color: #949494;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #B4B0B0;
+}
+
+.button1:hover {
+  background-color: #B4B0B0;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #B4B0B0;
+}
+
+.button2:hover {
+  background-color: #B4B0B0;
+  color: white;
+}
+
