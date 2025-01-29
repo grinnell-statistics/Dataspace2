@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grinnell DataSpace </title>
+<link href="css/Style1.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="nav-wrapper"> 
+	    <!--**************************************************************************
+    Header starts here. It contains Logo and 7 navigation links. 
+    ****************************************************************************-->
+   <nav>
+	   
+	    <a href = "https://www.grinnell.edu"> <img  src="images/Grinnell_College_logo.png" alt="logo" width = "50" height = "40" style = "padding: 16px"> </a> 
+	   <a style = "color:gray;font-size:35px; padding-top: 16px"> Dataspace by DASIL </a>
+		
+		<a href="index.html" style = "padding:20px; padding-left: 1.5%; font-family: 'Open Sans'">Homepage</a> 
+	   
+	   <div class = "dropdown" style = "float:left;padding-top:15px;padding-right:16px">
+	   <button class = "dropbtn"> Data Stories </button>
+	   <div class = "dropdown-content">
+		   <a href = "nypd1.html" style = "float:none"> NYPD</a>
+<a href = "covid1.html" style = "float:none"> Covid-19</a>
+<a href = "recidivism1.html" style = "float:none"> Recidivism </a>
+<a href = "brexit1.html" style = "float:none"> Brexit</a>
+		   </div>
+	   		</div>
+	  
+	   <div class = "dropdown" style = "float:left;padding-top:15px" >
+	   <button class = "dropbtn" > Stats Games </button>
+	   <div class = "dropdown-content">
+		   <a href = "racer1.html">Racer</a>
+		   <a href = "greenhouse1.html">Greenhouse</a>
+		   <a href = "statsgrounded1.html">Stats Grounded </a>
+		   <a href = "psychic1.html"> Psychic</a>
+		   </div>
+	   </div>
+		 
+     <a href = "https://dasil.sites.grinnell.edu/" title = "Link" style = "font-family: 'Open Sans';padding:20px"> Dasil Lab</a>
+	   <a href = "references.html" title = "Link" style = "padding-top: 20px;font-family: 'Open Sans'"> Faculty Resources</a> <a href = "datasets.html" title = "Link" style = "padding: 20px;font-family: 'Open Sans'"> Datasets</a>
+</nav>
+    </div>
+<div id = "mainwrapper" style = "width:100%">
+	<section id = "leftContent" style = "width:25%;float:left;text-align:center;line-height: 1.7">
+	<h2>&nbsp;  </h2>
+
+			 <section style = "width:65%;height:700px;text-align:center;font-size:25px">
+		<h2> Useful Links</h2>
+		<hr>
+		<strong> <a style = "text-decoration:none" href = "covid1.html"> Covid-19</a> </strong> <br>
+		<hr>
+		<a style = "text-decoration:none" href = "datasets.html"> Datasets</a> <br>
+		<hr>
+		<a  style = "text-decoration:none" href = "references.html"> Faculty Resources</a>
+		</section>
+	
+	</section>
+<section id = "mainContent" style = "line-height:1.65;width:45%;float:left">
+	<aside id="content1" style = "width:100%">
+
+	<h1 style = "font-family:Georgia;color:Black;font-size:42px;width:100%;line-height:1.10;text-align: center"> How do we better understand epidemic models and how public policy can influence the disease spread?</h1>
+	<img src = "covid/Stock 1.1.jpg"  alt = "Police" style = "width:100%">
+		
+		<h2> Introduction</h2>
+	<p> Think back to the early days of the COVID-19 pandemic, shortly after a novel coronavirus disease was first identified and reported on December 31, 2019. Within weeks, the virus had spread to dozens of countries, with cases climbing quickly. Hospitals rapidly became <a href="https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(21)00068-0/fulltext">overloaded and short-staffed</a>, ICU beds were full, and healthcare workers were put under an immense mental and physical toll, having to work overtime under psychological distress.
+	  </p>
+	<p>
+	Numerous government organizations have been turning to epidemiologists to: 
+	  </p>
+		<p>
+	  1) Understand and predict how the pandemic will progress, and </p>
+								<p> 
+	  2) Determine which actions to take to prevent the spread of the disease. </p>
+								<p>This site will discuss both of these core ideas. While the model shown below is a simplified model, it is very similar to the models used by many government organizations in the early days of the pandemic. </p>
+									
+		
+		<h2 style="font:bold;font-size:20px"><strong>Part 1:&nbsp;A <span style="font-size:18px"> Susceptible (S), Infected (I), and Recovered (R) </span> Model</strong></h2>
+	
+
+			
+	<p>Epidemiologists often use SIR models to represent the spread of diseases. This is a compartment-based model, meaning each person in the population is considered to be within one of several compartments. In this model, each person in a population is considered to be either Susceptible (S), Infected (I), or Recovered/Removed (R). This means that at any given time, a person is either:
+	  <li> <em>Susceptible</em> to infection, meaning that they have not yet been infected.</li>
+		<li> <em>Infected</em>, meaning that they currently have the disease and are capable of spreading it to other <em>susceptible</em> people. In other words, they are contagious.</li>
+		<li> <em>Recovered/Removed</em>, meaning that the person is no longer contagious; they have either recovered from the disease or have died and been removed from the population. Either way, they are no longer <em>infected</em> or <em>susceptible</em> to infection.</li>
+		
+		Then, equations are used to determine how people in the population will move from <em>susceptible</em> to <em>infected</em> and from <em>infected</em> to <em>recovered/removed</em>.</p>
+		<section class="6u">
+							<a href="#" class="image full"><img src="covid/SIR model image.PNG" alt="" style="width:700px;height:300px;"></a>
+				          <figcaption style="width:800px;height:20px;font:italic;font-size:18px"><em>Figure 1A: Compartmental SIR models are most common. At any given point in time, each person in the population can be located in exactly one compartment, although they can move between compartments over time.  </em></figcaption>
+<figcaption style="width:800px;height:20px;font:italic">&nbsp;</figcaption>
+                        </section>
+		<br>
+		<br>
+		<h2 style="font:bold;font-size:18px"><strong>Exploring an SIR Model</strong></h2> <p style="font-size:18px;color:black">In any model, we <em> <strong> start with multiple assumptions:</strong></em></p>
+							<div class="row">
+								<section class="6u" style = "width:100%;font-size:18px">
+
+									<li><strong>Population ( N ): </strong> We assume there are a fixed number of people in the population. In the case of COVID-19 modeling done for national governments, the population of interest is likely to be the total population of the country. However, SIR models can also be used to predict the spread of a disease in a smaller closed community, such as people on a cruise ship or in a prison. </li>
+									<li> <strong>Initial Infected (Infected<sub>Day = 1</sub>):</strong> The number of people infected with the disease on the day that the model "starts".</li>
+									<li> <strong>Transmission Rate: </strong>A measure of how quickly the disease will spread. This is expressed as the number of susceptible people that each infected person will infect per day, on average. Transmission rate could be determined by factors such as: 
+									<ul> <li> The probability that a <em>susceptible </em>person who comes into contact with an <em>infected</em> person will themselves become <em>infected</em>.</li>
+										<li>The number of other people that a given person comes into contact with on any given day.</li></ul></li>
+									
+									
+									<li> <strong>Recovery Rate: </strong> A measure of how long people take to move from <em>infected</em> to <em>recovered</em>. This is expressed as the proportion of people who are currently <em>infected</em> who will move to the <em>recovered/removed</em> compartment per day.</li>
+									
+					
+									
+								 <p> Models also include implicit assumptions. A major assumption of the SIR model is that once a person has recovered from the disease, they cannot catch the disease again. Of course, we know now that recovering from COVID-19 does not provide a person with lifelong immunity to reinfection in the same way that recovering from, say, measles or chicken pox does, which makes it problematic to model COVID-19 with a basic SIR model such as this one. However, in early 2020 epidemiologists assumed that recovery from COVID-19 would confer such immunity.</p>
+								
+								<p> Each one of the formally assumed values can dramatically influence the model. However, in reality, these values are not known, especially at the beginning of an epidemic. Thus, researchers must estimate each of the assumed values. Below is an app that illustrates a basic SIR model. Try changing the parameters to see how they affect the overall spread of the disease. Then, answer the questions to the right to check your understanding. By understanding this model and the calculations below, we can see why at the beginning of the pandemic the spread of COVID-19 was often represented as a "curve".</p>
+								</section>
+							</div>
+						
+		
+		
+	<hr>
+							
+	</aside>
+		</section>
+	
+		
+
+
+		<section id = "rightContent" style = "width:20%">
+	<aside id="rightcontent" style = "width:100%">
+<h2>&nbsp;  </h2>
+<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>
+<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>
+<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>
+<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>
+<h2>&nbsp;  </h2> <br> <br> <br>
+		<h1> <strong style = "font-size: 30px">Key Question </strong> </h1>
+		
+		<a style = "font-size:25px"> How can models help us make informed decisions about pandemic planning?</a>
+
+		</aside>
+	</section>
+
+</div>
+
+
+		
+	<div id = "SecondSectionwrapper" style = "width:100%;height:61rem">
+	<div style = "width:25%;float:left">
+			<iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/covid1.php" width = "100%" height = "815px" style = "border:none;padding-right:15px;padding-bottom: 50px"></iframe>	
+	</div>
+	<div style = "width:65%;padding-left:40px;float:left">
+		<iframe src = "https://shiny.grinnell.edu/dataspace/covid1" width = "100%" height="900px" style = "border:none"  ></iframe>
+			</div>
+		</div>
+	
+	<div id = "ThirdSectionwrapper" style = "width:45%;margin:auto;font-size:18px;font-family:Georgia;line-height:1.65">
+	 <h2 style = "font:bold;font-size:20px">
+									<strong> Calculation Details </strong>
+								</h2>
+							
+							<h2>&nbsp;</h2>
+									
+								 <p> Using the above app, set the initial conditions so that they fit the following assumed initial conditions. You can then verify the numbers found in the app with the calculations shown below. </p>
+							
+						    <li> <a> Population: N = 5000</a> </li>
+							<li> <a> Initial Infected: Infected<sub>Day = 1</sub>: 10 </a> </li>
+							<li> <a> Transmission Rate: 1</a> </li>
+							<li> <a> Recovery Rate: 0.3</a> </li>
+							<br>
+							<a> Calculating Recovered: </a>
+							<br>
+							<equation> Recovered<sub>2</sub> = Recovered<sub>1</sub> + (Infected<sub>1</sub> * Recovery Rate) </equation><br>
+							<equation style = "padding-left:75px"> 3 = 0 + (10 * 0.3)</equation>
+							<br>
+							<br>
+							<a> Calculating Infected: </a>
+							<br>
+							<equation> Infected<sub>2</sub> = Infected<sub>1</sub> + (Infected<sub>1</sub> * Susceptible<sub>1</sub> * Transmission Rate)/N - Recovered<sub>2</sub> </equation>
+							<br>
+							<equation style = "padding-left:48px"> 17 = 10 + (10 * 4990 * 1)/5000 - 3 (Rounded) </equation>
+							<br>
+							<br>
+							<a> Calculating Susceptible:</a>
+							<br>
+							<equation> Susceptible<sub>2</sub> = Susceptible<sub>1</sub> - (Infected<sub>1</sub> * Susceptible<sub>1</sub> * Transmission Rate)/N </equation>
+							<br>
+							<equation style = "padding-left:55px"> 4980 = 4990 - (10 * 4990 * 1)/5000 (Rounded) </equation>
+							
+							<h2>&nbsp;</h2>
+							
+							
+
+							<header>
+			  						<h2 style=";font:bold;font-size:20px"><strong >Part 2:&nbsp; How Public Policy Can Influence Model Assumptions</strong></h2>
+							</header>
+							<p> While SIR models can be insightful, you should quickly realize that the model depends heavily on the assumptions made by the researchers who are developing the model. What is the transmission rate when people are wearing masks versus when they are not wearing masks? How does social distancing help to lower the transmission rate? How do the two interact? The answers to questions such as these can have massive implications for how deadly the disease can be.</p>
+							
+							<p> Let’s take a closer look at a couple of the parameters in our simple SIR model. </p>
+	  <strong style = "font-size:20px"> Transmission Rates</strong>
+		
+	  <p> If you change the transmission rate in the graphing application above, you’ll notice that lowering the transmission rate by itself does not necessarily stop the spread of the disease. The true determinant of how many people will ultimately get the disease is the ratio between the transmission rate and the recovery rate. This is often referred to as the Reproducibility Number (R). This number tells us, on average, how many additional people one infected person will infect over the entire course of their infection. As you can see in the graph, if R is greater than 1—that is, if the transmission rate is greater than the recovery rate—then an epidemic will occur since more people are being infected than are recovering. If R is less than 1, then the disease will die out as more people are recovering then being infected. If R is very close to 1, there will be a constant rate of infections</p>
+		
+							<p> The Reproducibility Number will change over the course of the epidemic; as people move from <em>susceptible</em> to <em>recovered/removed</em>, the number of susceptible people shrinks and each infected person will be able to cause fewer new infections. Thus epidemiologists often talk about R<sub>0</sub>, or the Reproducibility Number on day 0 when everyone in the population is still susceptible. You can also calculate R<sub>t</sub>, or the Reproducibility Number on day t, or the Reproducibility Number on day <em>t</em>. As we can see in the graph, when the transmission rate is greater than recovery rate, we can see that R<sub>t</sub> is initially greater than one and the number of people wh are infected every day increases. Then, after infections reach peak on day <em>t</em> and start to decrease, R<sub>t</sub> is less than 1. One of the major challenges in SIR modeling is that the transmission rate is non-constant. It is time-dependent and can vary drastically. </p>
+							
+
+							<strong style = "font-size:20px"> Initial Infected </strong>
+							<p>
+							The initial infected parameter can also affect whether an outbreak will occur. Remember that for an epidemic to occur, each person who is infected must infect, on average, more than one additional person over the course of their infection. Let’s say the R<sub>0</sub> for a particular disease is 1.33, and at present only one person is infected. That person can’t infect 1 and 1/3 of a person! Each whole person is either infected or not, so the calculations in the SIR model are rounded to the nearest whole number. With an R<sub>0</sub> of 1.33, in an SIR model that person will only infect one other person (1.33 will round down to 1), who will also only infect one other person, and an epidemic will not occur. However,  if 10 people are infected initially, they will infect a total of 13 people between them, who will infect a further 17 people, and the number of cases will grow into an epidemic. You can see this yourself using the graphing application or the calculations above.
+	  </p>
+							<strong style = "font-size:20px"> Looking at the variability of SIR models</strong>
+							<p> 
+							  Predicting how the COVID-19 pandemic would progress quickly proved to be an incredibly challenging task.  The images below represent possible scenarios that the <a href = "https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html"> CDC </a> suggested early in the pandemic based on different possible values for R<sub>0</sub>, using SIR simulations with a population of 100,000. You can see from these images that altering the transmission rate and recovery rate even slightly caused drastic changes in the predicted outcome for the pandemic. “Flattening the curve” by reducing the transmission rate does reduce the total number of infections, but it still leads to a majority of the population being infected. The number of people infected on the peak day of infections is dramatically lower, reducing the strain on the healthcare system, but the trade-off is that the epidemic lasts longer.
+							</p>
+							<p>It is important to note that changing the recovery rate has little effect on how long the epidemic will last or how many people will ultimately be infected, unlike changing the transmission rate.
+	  </p>
+	  <section style = "width:120%">
+							<img src = "covid/Rplot High Low Transmission.png" width = "69%">
+							<img src = "covid/Rplot High Low Recovery Level.png" width = "60%">
+								</section>
+							<h2>&nbsp;</h2>
+							
+				<strong style = "font-size:20px"> Model Complexity and Assumptions </strong>
+							<p> We must remember that the model we have been looking at is very basic. The differences between the possible predicted outcomes become even more apparent as researchers increase the complexity of the models by, for example, adding parameters to account for an incubation period for the disease, for quarantine or isolation measures, or for the possibility of reinfection. When there is great uncertainty around the correct numbers to use for the model inputs, or even around which parameters need to be included in the model, any predictions produced by these models will be very uncertain as well. This uncertainly prevents creating <a href="https://doi.org/10.1016/j.bjid.2020.04.003">reliable projections for the course of the outbreak</a>, which frustrates efforts to contain outbreaks and worsens the already devastating burdens on the healthcare system and the economy. Careful attention must be given to the assumptions made when using any model, whether it be an SIR or a statistical model.
+	  </p>
+							<strong style = "font-size:20px"> Additional Resources </strong>
+							<p style = "font_size:20px">
+							To view a more complex shiny app with more variables for modeling Covid, click <a href = "https://alhill.shinyapps.io/COVID19seir/"> here</a>. Grinnell College students Senay Gockcebel, Britney He, Bowen Mince, and Linh Tang did a simulation study on a more complex model. See the paper <a href = "covid/Paper.pdf">here</a>. The Github for it can be reached <a href = "https://github.com/LinhTangTD/COVID19_Modeling"> here</a>.
+							</p>
+						
+	
+	</div>
+			
+	
+	
+			
+	<h2>&nbsp;</h2>
+	<section style = "width:100%; overflow:hidden">
+	<hr>
+	<hr>
+	<div class = "junkdrawer"  style = "padding-left:10%">
+	<h2 style = "font-family: Georgia; font-size:30px"> Dataspace</h2>
+		<section id = "Data Stories" style = "float:left">
+		<h3> Data Stories </h3>
+			<br>
+			<a href = "nypd1.html"> NYPD</a>
+			<br>
+			<br>
+			<a href = "covid1.html"> Covid-19 <a> 
+				<br> 
+				<br>
+				<a href = "recidivism1.html"> Recidivism</a>
+				<br> 
+				<br>
+				<a href = "brexit1.html"> Brexit</a>
+		</section>
+		<section id = "Stats Games" style = "float:left;padding-left:100px">
+		<h3> Stats Games </h3>
+			<br>
+			<a href = "racer1.html"> Racer</a>
+			<br>
+			<br>
+			<a href = "greenhouse1.html"> Greenhouse</a>
+			<br>
+			<br>
+			<a href = "statsgrounded1.html"> Statistically Grounded</a>
+
+
+		</section>
+		
+		<section id = "Useful Links" width = "25%" style = "float:left;padding-left:100px">
+		<h3> Other Links </h3>
+			<br>
+			<a href = "index.html"> Homepage</a>
+			<br>
+			<br>
+			<a href = "https://dasil.sites.grinnell.edu/"> Dasil Lab</a>
+			<br>
+			<br>
+			<a href = "references.html"> Faculty Resources</a>
+			<br>
+			<br>
+			<a href = "datasets.html"> Datasets</a>
+		</section>
+		<section id = "Email and Questions"  style = "float:left;padding-left:100px; width:20%">
+			<h3> Questions? </h3>
+			
+			<p>
+			If you have any questions or comments, please email us at <a href = "mailto: DASIL@grinnell.edu" style = "color:blue"> DASIL@grinnell.edu</a>
+			</p>
+			
+		</section>
+</div>
+	</section>
+		<section style="width:100%; float:left; text-align: center">
+			<p> Dataspace is supported by the Grinnell College Innovation Fund and was developed by Grinnell College faculty and students. Copyright &copy; 2021. All rights reserved</p>
+			<p> This page was last updated on 19 July 2021.</p>
+		</section>
+	</body>
+</html>
+<footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://dataspace.sites.grinnell.edu/tools/tracker.js"></script>
+</footer>

@@ -1,0 +1,480 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grinnell DataSpace </title>
+  <link href="css/Style1.css" rel="stylesheet" type="text/css">
+  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+  <script>var __adobewebfontsappname__ = "dreamweaver"</script>
+  <script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js"
+    type="text/javascript"></script>
+</head>
+
+<body>
+
+  <div id="nav-wrapper">
+    <!--**************************************************************************
+    Header starts here. It contains Logo and 7 navigation links. 
+    ****************************************************************************-->
+    <nav>
+
+      <a href="https://www.grinnell.edu"> <img src="images/Grinnell_College_logo.png" alt="logo" width="50" height="40"
+          style="padding: 16px"> </a>
+      <a style="color:gray;font-size:35px; padding-top: 16px"> Dataspace by DASIL </a>
+
+      <a href="index.html" style="padding:20px; padding-left: 1.5%; font-family: 'Open Sans'">Homepage</a>
+
+      <div class="dropdown" style="float:left;padding-top:15px;padding-right:16px">
+        <button class="dropbtn"> Data Stories </button>
+        <div class="dropdown-content">
+          <a href="nypd1.html" style="float:none"> NYPD</a>
+          <a href="covid1.html" style="float:none"> Covid-19</a>
+          <a href="recidivism1.html" style="float:none"> Recidivism </a>
+          <a href="brexit1.html" style="float:none"> Brexit</a>
+        </div>
+      </div>
+
+      <div class="dropdown" style="float:left;padding-top:15px">
+        <button class="dropbtn"> Stats Games </button>
+        <div class="dropdown-content">
+          <a href="racer1.html">Racer</a>
+          <a href="greenhouse1.html">Greenhouse</a>
+          <a href="statsgrounded1.html">Stats Grounded </a>
+          <a href = "psychic1.html"> Psychic</a>
+        </div>
+      </div>
+
+      <a href="https://dasil.sites.grinnell.edu/" title="Link" style="font-family: 'Open Sans';padding:20px"> Dasil
+        Lab</a>
+      <a href="references.html" title="Link" style="padding-top: 20px;font-family: 'Open Sans'"> Faculty Resources</a>
+      <a href="datasets.html" title="Link" style="padding: 20px;font-family: 'Open Sans'"> Datasets</a>
+    </nav>
+
+
+  </div>
+  <div id="mainwrapper" style="width:100%">
+    <section id="leftContent" style="width:25%;float:left;text-align:center;line-height: 1.7">
+      <h2>&nbsp; </h2>
+      <div id="mySidenav" class="sidenav">
+        <a href="racer1.html" id="part1"><strong>Part 1</strong></a>
+        <a href="racer2.html" id="part2"><strong>Part 2</strong></a>
+        <a href="racer3.html" id="part3"><strong>Part 3</strong></a>
+      </div>
+
+    </section>
+    <section id="mainContent" style="line-height:1.65;width:45%;float:left">
+      <aside id="content1" style="width:100%">
+
+        <h1 style="font-family:Georgia;color:Black;font-size:42px;width:100%;line-height:1.10;text-align: center"> The
+          Racer Game Part 2</h1>
+
+        <section style=" width:100%">
+          <img src="racer/Racer2.jpg" alt="Racer" style="width:100%">
+
+        </section>
+        <h3> Collecting, Organizing and Drawing Conclusions from Data</h3>
+
+        <p> Much like the behind-the-scenes experts on <em>Top Gear</em> who run data-gathering tests to spin into
+          easy-to-digest soundbites for everyday audience members, you now have the start of the information you need to
+          put together some statistics based on the Racer game. </p>
+
+        <h3> Introduction </h3>
+        <p> In this lab, your goal is to complete a research study based on the Racer game. Just like last time, each
+          car can be raced multiple times on a track and the time to complete each race will be recorded. This time,
+          however, there are three drivers (just think of them as our rather roguish <em>Top Gear</em> hosts!) –
+          Classic, Cruiser, and HotRod. After you race the cars, you can analyze the data in the table. </p>
+        <h3> 2A: Designing an Experiment</h3>
+
+        <p>Many people assume that statistics focuses on calculations. Have you spent time in Las Vegas, Atlantic City,
+          or even just a plain old casino? It’s easy to think that betting on something like, say, the World Cup or
+          Super Bowl comes down to a bunch of math problems pitted against each other – when in reality, there are a lot
+          of other variables that figure in when calculating those odds. Most real-world statisticians spend much more
+          time properly collecting data (or cleaning/organizing data) than they do on the calculations. For example,
+          before collecting any data for an experiment involving the Racer game, a researcher should look at all of the
+          steps below:</p>
+
+        <p>
+        <ol>
+          <li> <strong> Develop a hypothesis</strong> about the population of all races. Here are a few examples:</li>
+          <dd>• I believe that on average, the Classic car is faster than the HotRod Car.</dd>
+          <dd>• I believe that on average, the HotRod car will complete a race faster than the Cruiser car.</dd>
+          <dd>• I believe that at least one of the average Finish Times is different for the Classic, Cruiser, or HotRod
+            cars.</dd>
+          <li> Determine how you will <strong> collect your sample</strong></li>
+          <dd>• What will you consider as an observation? For example, will it be a player, an individual race, a pair
+            of races, a car, or a track?</dd>
+          <dd>• How many samples will you collect?</dd>
+          <dd>• What is the explanatory variable? Is it categorical or quantitative?</dd>
+          <dd>• What is the response variable? Is it categorical or quantitative?</dd>
+          <dd>• How will randomization be incorporated into the data collection?</dd>
+          <dd>• What specific data needs to be recorded with each race?</dd>
+          <dd>• What graphs or statistical methods do you plan to use once you collect the data? In the example below,
+            we discuss using a paired t-test.</dd>
+          <li><strong>Identify potential confounding variables.</strong> &nbsp;Once again, it’s key to take into account
+            possible <strong>confounding variables</strong> (variables that the researcher did not include in the study
+            but that might be connected to both the independent variable and the dependent variable), to determine if
+            the car speeds are in fact truly different. Here’s an example: some racetracks are longer than others. We
+            want to hold the track constant for everyone in your experiment to ensure that the type of track does not
+            bias our results. Are there any other potential confounding variables that might get in the way of
+            determining which car is faster?&nbsp; </li>
+        </ol>
+        </p>
+
+        <h3> 2B: Collecting Data</h3>
+
+        <p>Unlike the cavalier folks in<em> Top Gear</em>, who thumb their noses at the rules, researchers need clear
+          <strong>protocols</strong> (instructions) so that the experimental data is collected using the same process
+          every time. Documentation of these protocols also enables other researchers to verify the validity of the
+          data. If collecting data as a class, clearly identify the exact protocols and timeframe for collecting data.
+          For example, here are the protocols for data collected in an earlier class:&nbsp;</p>
+
+        <li>All data was collected during class time on a computer in the statistics lab room.</li>
+        <li>Students logged onto the site and went to the Racer game.</li>
+        <li>Make sure you enter the correct&nbsp; <em><strong>GroupID </strong> and
+              <strong>PlayerID</strong></em>.</li>
+        <li>Click on the &nbsp;<em><strong style="">Paired Test</strong></em>&nbsp; button on the main menu after
+            logged in.</li>
+        <li>Each student in the class will race exactly two times on the <em><strong style="">Oval
+                Track</strong></em>. Prior to racing the cars, students were randomly assigned which car they would race
+            first.</li>
+        <li>Click on the &nbsp;<em><strong style="">left box to select the car you will race first</strong></em>.
+        </li>
+        <li>Then select &nbsp;<em><strong style="">the car you will race second</strong></em>.</li>
+        <li>Then select the &nbsp;<em><strong style="">SELECT TRACK</strong></em> button.</li>
+        <li>Then click the &nbsp;<em><strong style="">START &nbsp;</strong></em>button.</li>
+        <li>Use the arrow keys to race the car.</li>
+
+      </aside>
+    </section>
+
+
+    <section id="mainContent" style="line-height:1.65;width:95%;float:left; font-size:20px;padding:5px 20px 20px">
+      <iframe src="https://www.stat2games.sites.grinnell.edu/games/racerlite22.html"
+        style="border:none;width:100%;height:600px"> </iframe>
+    </section>
+
+
+
+    <div id="mainwrapper" style="width:45%">
+      <section id="mainContent" style="line-height:1.65;width:95%;float:left; font-size:18px;padding:5px 20px 20px">
+
+        <h3> 2C: Examining the Data</h3>
+
+        <p> Before you start any calculations, it is essential to examine your data. Ask yourself the following
+          questions for the data collected in the Racer game:</p>
+        <p>
+        <ol>
+          <li>Were there any players who did not properly follow protocols? Did they play the game an incorrect number
+            of times? Did they use the wrong cars or tracks? Can their data be included? </li>
+          <li>Were there any outliers or skewed data? How does this influence our analysis? Should these outliers be
+            removed?
+          </li>
+          <li>Some people have a natural talent for video games; to others, it’s a completely foreign concept. How can
+            we account for player skill level? </li>
+          <li>How do we account for the influence of order in which cars are raced? For example, would you expect
+            players to perform better after practicing with the first car?&nbsp;</li>
+          <li>How does the variation in effect size (the difference between means) compare to the random variation in
+            our data?</li>
+          <li>Are there any other issues that may cause our data to be unreliable or invalid?</li>
+          <li>What conditions are required to conduct a statistical analysis? How can you evaluate whether these
+            conditions were met? If the sample size is small, it is particularly important to verify that the conditions
+            are satisfied. What should you do if the needed conditions are not met? </li>
+
+        </ol>
+
+        Watch the following video to see an example of how data cleaning can influence a statistical analysis.
+        </p>
+
+
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/isWnFFORQVE?start=294"
+          title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+      </section>
+    </div>
+
+  </div>
+
+
+  <!--    <div id = "mainwrapper" style = "width:100%">-->
+  <!--        <section id = "mainContent" style = "line-height:1.65;width:45%;float:left; padding-left: 30%">-->
+  <!--            <aside id="content1" style = "width:100%">-->
+  <!---->
+  <!--                <h3> Step 2: Exploring Sample Data</h3>-->
+  <!--                <p>How did you do? Did you think one car performed better than the other? What data were you paying attention to as you were racing?&nbsp;</p>-->
+  <!--                <p>Before we analyze the data your class has collected let’s look at a sample dataset, called sample2. In the following visualization app, you first have the Group ID which represents a sample taken from a group of players (in this case, your class). The X Variable can either be Car, Order, or Player ID. The Y Variable can either be Finish Time or Top Speed Reached. Try switching between different X and Y variables to see what different data pops up. Then, complete the questions on the left to make sure you understand how this app works.&nbsp;</p>-->
+  <!--            -->
+  <!--            </aside>-->
+  <!--        </section>-->
+  <!--    </div>-->
+
+
+
+  <!--		<section id = "rightContent">-->
+  <!--	<aside id="rightcontent" style = "width:100%">-->
+  <!--		-->
+  <!--		-->
+  <!--<h2>&nbsp;  </h2>-->
+  <!---->
+  <!--<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>-->
+  <!--<br>-->
+  <!--		<br> <br>-->
+  <!--		-->
+  <!---->
+  <!--		-->
+  <!--<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>-->
+  <!--<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>-->
+  <!--<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>-->
+  <!--		-->
+  <!--<h2>&nbsp;  </h2> <br> <br> <br>-->
+  <!--		<h3> <strong style = "padding-right: 6px">Focus Question 1 </strong><img src="images/FocusQuestion.jpg" width="38" height="38" alt="focus question icon"/> </h3>-->
+  <!--		-->
+  <!--		<a style = "font-size:18px"> Is there evidence of racial discrimination in the NYPD based on the stops and arrests it makes?</a>-->
+  <!---->
+  <!--		<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>-->
+  <!--		<h2>&nbsp; </h2>-->
+  <!--		<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>-->
+  <!--		<h2>&nbsp; </h2>-->
+  <!--		<h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>-->
+  <!--		<h2>&nbsp; </h2>-->
+  <!--		<h2>&nbsp;  </h2><h2>&nbsp;  </h2>-->
+  <!---->
+  <!--		<p>-->
+  <!--	  <h3> <strong style = "padding-right: 10px"> Key Idea:</strong><img src="images/KeyIdea.jpg" width="35" height="39" alt="key idea icon"/><br></h3>-->
+  <!--<a style = "font-size:18px">Percentages can be mathematically accurate, but lead to very different conclusions.  </a>-->
+  <!--		</p>-->
+  <!--		</aside>-->
+  <!--</section>-->
+  <!---->
+  <!--</div>-->
+
+  <hr>
+
+  <div id="SecondSectionwrapper" style="width:100%;height:auto">
+    <div style="width:20%;float:left;font-family:Georgia;color:Black;font-size: 18px; padding-left: 8%">
+      <div>
+        <h3>2D: Analyzing Data</h3>
+        <p>Before we analyze the data your class has collected, let’s look at a sample dataset, called
+          <strong>sample2</strong>. Get started by completing the questions below to make sure you understand how this
+          app works, then analyze your class data.&nbsp; </p>
+        <section class="6u">
+          <p> To use the app, start with the following settings then answer the questions below.</p>
+          <p>
+            <li> Group ID: <strong>sample2</strong></li>
+            <li> Track: <strong>OvalTrack</strong></li>
+            <li> X Variable: <strong>Body</strong></li>
+            <li> Y Variable: <strong>FinishedTime</strong></li>
+            <li> Color by: <strong>Body</strong></li>
+            <li> Check: <strong>Show Summary Statistics</strong></li>
+          </p>
+
+        </section>
+
+        <br>
+        <br>
+
+        <p><strong>Instructors Note: </strong> Go to <a href="references.html">faculty resources</a> to access student
+          data</p>
+      </div>
+    </div>
+
+    <div style="width:60%;padding-left:1.5%;float:left">
+      <iframe src="https://shiny.grinnell.edu/Racer2B/" width="105%" height="600px" style="border:none"></iframe>
+    </div>
+
+    <div id="mainwrapper" style="width:75%; height: auto">
+
+      <section id="mainContent"
+        style="line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
+        <iframe src="https://www.stat2games.sites.grinnell.edu/dataspaceForms/racer2B.php" width="100%"
+          height="1950px" style="border:none;padding-right:15px;padding-bottom: 1px"></iframe>
+      </section>
+
+
+    </div>
+
+    <br>
+
+    <div id="mainwrapper" style="width:75%">
+
+      <section id="mainContent"
+        style="line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
+
+        <h3>2E: Get Curious<img src="images/GetCurious.jpg" width="35" height="32" alt="get curious icon" /></h3>
+        <ol>
+          <li>Develop your own experimental design by rewriting the steps from Section 2B: Collecting Data. List the specific protocols that need to be followed for your new experiment. Make sure that you also address all three steps in Section 2A: Designing an Experiment section.&nbsp;
+          </li>
+          <br>
+          <li>Using your class data, answer the seven questions identified in Section 2c:&nbsp; Examining the Data.   &nbsp; </li>
+          <br>
+          <li>Model Conditions:</li>
+          <dd> a. List the assumptions required to conduct a hypothesis test.</dd>
+          <dd> b. Describe how you evaluated whether these conditions were met. </dd>
+          <dd> c. What should you do if the needed assumptions are not met?</dd>
+          <br>
+          <li>If you collected data properly, you can use the Racer App above to analyze it. Use the data to conduct a hypothesis test to determine if there is a difference in the population average finishing time of the Classic and HotRod cars.</li>
+          <dd> a. Provide the test statistic and corresponding p-value.</dd>
+          <dd> b. Give the 95 percent confidence interval and provide an interpretation. </dd>
+          <dd> c. What conclusions can you draw from your class experiment? Clearly state your <strong>overall</strong>
+            recommendation to someone wanting to win a race on the oval track.</dd>
+          <li>Watch the video titled "Deception at Duke": <a
+              href="https://www.youtube.com/watch?v=eV9dcAGaVU8">https://www.youtube.com/watch?v=eV9dcAGaVU8</a>. </li>
+          <dd> a. Briefly summarize the video.</dd>
+          <dd> b. Discuss how this Racer Lab is related to the errors discussed in this video.</dd>
+          <dd> c. What policies should universities set in place to ensure this type of error does not occur again?</dd>
+
+          <li>How much do your conclusions depend on the data cleaning that was done? </li>
+          <br>
+          <li>Could different response variables (Finish Time versus Top Speed versus Time to 30) result in different
+            conclusions? Why or why not?</li>
+          <br>
+          <li>If our p-value is large, can we be confident that the average finish times are the same for both cars?
+          </li>
+          <br>
+          <li>Assume your class repeated this experiment</li>
+          <dd> a. Would you expect to get similar results? </dd>
+		  <dd> b. Would you expect to get identical results? </dd>
+          <dd> c. If we collected data from another sample of players from the population, do you think it would affect our conclusion?</dd>
+          <dd> d. What exactly is the population for this study? Did we collect a true simple random sample?</dd>
+          <br>
+          <li>Many published articles show a p-value without discussing whether or not they modified or removed data.
+            Does a small p-value guarantee that the study was done correctly? Why or why not? </li>
+          <br>
+          <li>Does the hypothesis test or confidence interval provide more helpful information for our study? In
+            particular, does the hypothesis test and p-value provide a good measure of the difference between average
+            car speeds?</li>
+          <br>
+          <li>The game on this page is simplistic. More advanced versions of this game, allowing for numerous types of
+            experiments, are available here: <a
+              href="https://www.stat2games.sites.grinnell.edu/games/raceradvanced22.html"> Racer Game</a> and here: <a
+              href="https://www.stat2games.sites.grinnell.edu/games/racekart.html">RaceKart Game</a>. What research
+            questions could be addressed with these advanced games that could not be addressed with the simplistic game on
+            this page?</li>
+
+        </ol>
+      </section>
+
+
+    </div>
+
+    <br>
+
+    <div id="mainwrapper" style="width:75%">
+
+      <section id="mainContent"
+        style="line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
+
+        <h3>2F: Data Literacy<img src="images/DataLiteracy.jpg" width="35" height="32" alt="data literacy icon" /></h3>
+        <ol>
+          <li>Read the brief article discussing the ASA’s statement on statistical significance and
+            p-values:&nbsp;&nbsp; <a
+              href="https://doi.org/10.1080/00031305.2016.1154108">https://doi.org/10.1080/00031305.2016.1154108</a>.
+            Pick one of the six principles and write one to two paragraphs discussing how this principle relates to this
+            Racer Lab activity. More than one of the principles can be applied to this lab. </li>
+          <br>
+          <li>Read the article discussing Amy Cuddy’s research: <a
+              href="https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html">https://www.nytimes.com/2017/10/18/magazine/when-the-revolution-came-for-amy-cuddy.html</a>.
+            Discuss how this Racer Lab is related to the errors discussed in this article. </li>
+
+        </ol>
+      </section>
+    </div>
+
+
+    <br>
+
+
+    <a href="racer1.html" style="font-family: Georgia; font-size:24px;color:blue; float: left; width:15%"
+      class="button button1">Go back to Part 1</a>
+    <a href="racer3.html" style="font-family: Georgia; font-size:24px;color:blue; float: right; width:15%"
+      class="button button1">Continue to Part 3</a>
+
+    <br>
+  </div>
+
+
+
+
+
+
+  <h2>&nbsp;</h2>
+
+  <section style="width:100%; overflow:hidden">
+    <hr>
+    <hr>
+    <div class="junkdrawer" style="padding-left:10%">
+      <h2 style="font-family: Georgia; font-size:30px"> Dataspace</h2>
+      <section id="Data Stories" style="float:left">
+        <h3> Data Stories </h3>
+        <br>
+        <a href="nypd1.html"> NYPD</a>
+        <br>
+        <br>
+        <a href="covid1.html"> Covid-19 </a>
+        <br>
+        <br>
+        <a href="recidivism1.html"> Recidivism</a>
+        <br>
+        <br>
+        <a href="brexit1.html"> Brexit</a>
+      </section>
+      <section id="Stats Games" style="float:left;padding-left:100px">
+        <h3> Stats Games </h3>
+        <br>
+        <a href="racer1.html"> Racer</a>
+        <br>
+        <br>
+        <a href="greenhouse1.html"> Greenhouse</a>
+        <br>
+        <br>
+        <a href="statsgrounded1.html"> Statistically Grounded</a>
+
+
+      </section>
+
+      <section id="Useful Links" width="25%" style="float:left;padding-left:100px">
+        <h3> Other Links </h3>
+        <br>
+        <a href="index.html"> Homepage</a>
+        <br>
+        <br>
+        <a href="https://dasil.sites.grinnell.edu/"> Dasil Lab</a>
+        <br>
+        <br>
+        <a href="references.html"> Faculty Resources</a>
+        <br>
+        <br>
+        <a href="datasets.html"> Datasets</a>
+      </section>
+      <section id="Email and Questions" style="float:left;padding-left:100px; width:20%">
+        <h3> Questions? </h3>
+
+        <p>
+          If you have any questions or comments, please email us at <a href="mailto: DASIL@grinnell.edu"
+            style="color:blue"> DASIL@grinnell.edu</a>
+        </p>
+
+      </section>
+    </div>
+  </section>
+
+  <section style="width:100%; float:left; text-align: center">
+    <p> Dataspace is supported by the Grinnell College Innovation Fund and was developed by Grinnell College faculty and
+      students. Partial support provided by the Transforming Undergraduate Education in Science (TUES) program at the
+      National Science Foundation under DUE#0510392, DUE #1043814, and DUE #1712475. Copyright &copy; 2021. All rights
+      reserved</p>
+    <p> This page was last updated on 5 August 2022.</p>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-c86b9d9c-d902-4083-ab9f-03e19e470235"></div>
+
+  </section>
+
+
+</body>
+
+</html>
+<footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://dataspace.sites.grinnell.edu/tools/tracker.js"></script>
+</footer>
