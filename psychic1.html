@@ -148,7 +148,7 @@
 	<section id = "rightContent">
 	<aside id="rightcontent" style = "width:100%">
 		
-		
+
 <h2>&nbsp;  </h2>
 
 <h2>&nbsp;  </h2><h2>&nbsp;  </h2><h2>&nbsp;  </h2>
@@ -199,34 +199,59 @@
             <section id = "mainContent" style = "line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
                 
                 <h3>Part 1D: Hypothesis Testing and p-values <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon"/></h3>
-                <p>The above activity can be used to explain the core ideas behind all statistical hypothesis tests. Hypothesis testing is a process used to determine 
-                whether an event can reasonably be attributed to chance or whether there is some other explanation.</p>
+                
+				<p>The above activity can be used to explain the core ideas behind statistical hypothesis tests. Hypothesis testing is a process used to determine 
+					whether an event can reasonably be attributed to chance or whether there is some other explanation. </p>
                 <br>
                 <p>For example, let’s assume your friend, Akilah, claims to be psychic and you decide to test this claim using a test similar to the one above. There are 
                 two possible conclusions we can make.</p>
                 
-                <li>Claim 1: Akilah has no special ability to predict the right card. Then we would expect that Akilah would typically get 1 out of 5 guesses correct. This 
-                would also be equivalent to saying the probability of success is 0.2. Statisticians write this as a <strong>null hypothesis:</strong> Ho: p = 0.2. Null Hypotheses are 
-                typically what we assume to be true.</li>
-                <li>Claim 2: Akilah has some special ability, meaning Akilah can get more than 1 out of 5 guesses correct. This would also be equivalent to saying the 
-                probability of success is greater than 0.2. Statisticians write this as an <strong>alternative hypothesis:</strong> Ho: p > 0.2. Alternative hypotheses are claims that we 
-                will only believe if we have enough evidence.</li>
+                <li>Claim 1: Akilah has no special ability to predict the right card. Then we would expect that Akilah would typically get 1 out of 5 guesses correct. 
+					This would also be equivalent to saying the probability of success is 0.2. Statisticians write this as a null hypothesis: Ho: p = 0.2. 
+					Null hypotheses are typically what we assume before we collect any data. Here we use “p” to represent the assumed proportion.</li>
+					<blockquote>
+						<p><strong>Note:</strong> In every null hypothesis we are making several corresponding assumptions. It is important to identify these assumptions 
+							before any test can be trusted. In this test, Claim 1 is also assuming:</p>
+						<ul>
+							<li>The above Psychic Test is truly random. We assume that this test is not manipulated in a way that allows people to be more likely to guess the
+								 right card correctly.</li>
+							<li>Akilah is only playing one game. In other words, we are collecting one sample of data with 10 observations (10 attempts). Akilah did not play 
+								the game multiple times and only her best score was shown.</li>
+						</ul>
+					</blockquote>
+
+				<li>Claim 2: At least one of the assumptions in the null hypothesis is incorrect, meaning Akilah is expected to do better than 1 out of 5 correct guesses. This 
+					would also be equivalent to saying the probability of success is greater than 0.2. Statisticians write this as an alternative hypothesis: Ha: p > 0.2.</li>
+				<blockquote>
+					<p><strong>Note:</strong> It is important to recognize that one hypothesis test, by itself, should never be enough to prove a theory, but it can be used to 
+						determine how much evidence there is to support a theory. * [[See the American Statistical Association statement to see more details behind these ideas, https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf]] </p>
+				</blockquote>
                 
                 <p>Based on the data visualization in Part 1C, we can make conclusions based on Akilah’s score.</p>
                 
-                <p>If Akilah played your game and got 4 out of 10 correct, she would have done better than expected. However, the theoretical distribution in the above app 
-                shows us that 12% of the time people can get 4 or more correct just by random chance. In terms of a statistical hypothesis test, the p-value = 0.12 does not 
-                give us enough evidence to reject Claim 1.</p>
-                
-                <p>A p-value is a number between 0 and 1 that we use to quantify our decision. A p-value is the probability of observing an outcome assuming that the null 
-                hypothesis is true. When a p-value is very small, it means it is very unlikely that the null hypothesis is true.</p>
-            
-                <p>For example, if the null hypothesis is true (p = 0.2) the probability that Akilah correctly guesses 6 or more cards is 0.01. This may cause us to question
-                the null hypothesis and conclude that something is helping Akilah correctly guess the cards.</p>
-                
-                <p>However, a p-value never proves that our alternative hypothesis is true, it simply tells us how unlikely the null hypothesis is when only random chance is 
-                involved. Remember that a p-value = 0.01 means that 1 out of 100 times someone will correctly guess 6 or more cards just by random chance even when the null 
-                hypothesis is true.</p>
+                <li>Case 1): Let’s assume Akilah played your game and got 4 out of 10 correct, she would have done better than expected. However, the above app shows us that 12% of 
+					the time people can get 4 or more correct just by chance. In terms of our statistical hypothesis test, the p-value = 0.12 does not give evidence to believe Akilah 
+					does better than the average person with no abilities. Thus the sample data (Akilah’s score) provides no evidence to support the idea that Claim 2 is true. </li>
+				<blockquote>
+					<p>A p-value is a number between 0 and 1 that we use to quantify our decision. A p-value is the probability of observing an outcome while 
+						assuming that the null hypothesis and all corresponding assumptions are true. </p>
+					<p>In a hypothesis test, “no evidence” or "weak evidence" is typically associated with a large p-value (greater than 0.05), "moderate
+						evidence" might fall in a range between 0.05 and 0.1, and "very strong evidence" would be a very small p-value (such as 0.01 or 
+						lower) signifying a highly significant result against the null hypothesis.  </p>
+				</blockquote>
+				
+				<p>The p-value is not the same as the p we use in our null and alternative hypotheses. </p>
+
+				<li>CASE 2) Let’s assume Akilah got 6 out of 10 guesses correct. If the null hypothesis is true (p = 0.2) the probability that Akilah correctly guesses 6 or 
+					more cards is 0.01. This may cause us to question the null hypothesis and conclude that something is helping Akilah correctly guess the cards (at least one of the assumptions in the null hypothesis is incorrect. </li>
+					<blockquote>
+						<p>A p-value = 0.01 provides very strong evidence against the null hypothesis, meaning that it is unlikely, but not impossible, that someone will correctly guess 6 or more cards just by random chance. However, p-values 
+							never prove that our alternative hypothesis is true; it simply tells us how unlikely the null hypothesis is when only chance is involved.  </p>
+						<p>Even if Case 2 is true, one hypothesis test does not prove Akilah has special abilities. Instead, we should say, “The observed data provides some evidence that leads us to question the null hypothesis.” The questions 
+							below discuss additional questions to consider when conducting hypothesis tests.</p>
+					</blockquote>
+				
+				
                 
             </section>
             
