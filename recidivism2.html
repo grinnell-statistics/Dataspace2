@@ -41,8 +41,9 @@
         <div class="dropdown-content">
           <a href="racer1.html">Racer</a>
           <a href="greenhouse1.html">Greenhouse</a>
-          <a href="statsgrounded1.html">Coffee Truck </a>
+          <a href="statsgrounded1.html">Stats Grounded </a>
           <a href="psychic1.html"> Psychic</a>
+          <a href="coaster1.html">Coaster</a>
         </div>
       </div>
 
@@ -57,8 +58,8 @@
       <h2>&nbsp; </h2>
 
       <div id="mySidenav" class="sidenav">
-          <a href="recidivism1.html" id="part1"><strong>Part 1</strong></a>
-          <a href="recidivism2.html" id="part2"><strong>Part 2</strong></a>
+        <a href="recidivism1.html" id="part1"><strong>Part 1</strong></a>
+        <a href="recidivism2.html" id="part2"><strong>Part 2</strong></a>
       </div>
 
     </section>
@@ -85,7 +86,10 @@
           please watch the video below that goes through the process of creating a classification tree by using a sample
           of the data we will be using.
         </p>
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/c8rYsyTjROw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/c8rYsyTjROw" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
         <p>
           With measuring accuracies, it is also important to measure the accuracy of a model as it relates to different
           groups. This is a good way to check if the model may be inherently biased towards a specific group.
@@ -110,75 +114,72 @@
 
         </div>
 
-        
-        
 
-      </section>
 
-        <iframe src="https://bowsermince.shinyapps.io/CartRecid/" width="100%" height="1050px"
-        style="border:none;position:relative"></iframe>
 
-        <section
-        id="leftContent"
-        style="
+    </section>
+
+    <iframe src="https://bowsermince.shinyapps.io/CartRecid/" width="100%" height="1050px"
+      style="border:none;position:relative"></iframe>
+
+    <section id="leftContent" style="
           width: 25%;
           float: left;
           height: auto;
           text-align: center;
           line-height: 1.7;
-        "
-      >
-        <h2>&nbsp;</h2>
-        </section>
+        ">
+      <h2>&nbsp;</h2>
+    </section>
 
-        <section id="mainContent" style="line-height:1.65;width:45%;float:left">
-        <h2> Random Forests: Many Classification Trees</h2>
-        <p>
-          Predicting if someone will recidivate is a difficult task. While decision trees are powerful classifying
-          algorithms, they have their advantages and disadvantages. Unlike many machine learning algorithms, decision
-          trees are white-box, meaning the user can see the steps taken in order to classify an individual, and the
-          construction of the tree can be clearly explained; furthermore, they are easy to understand and interpret.
-          Generally, though, decision trees alone are not useful as they are unstable, lack flexibility, and are
-          relatively inaccurate compared to other algorithms.
-        </p>
-        <p>
-          While the COMPAS algorithm is proprietary, its mechanisms are likely more complex than a standard decision
-          tree. By adopting concepts from decision trees, we can build a more advanced model known as a random forest.
-          Instead of outputting one specific category, a random forest returns a probability of some outcome occurring
-          based on the results of many decision trees.&nbsp;For example, the decision tree for recisivism in the above
-          app will result in either a Yes or No response. Random forest algorithms provide the probability of a person
-          recidivating. When used to predict recidivism, we can use this probabilistic output to create a more equitable
-          model.</p>
+    <section id="mainContent" style="line-height:1.65;width:45%;float:left">
+      <h2> Random Forests: Many Classification Trees</h2>
+      <p>
+        Predicting if someone will recidivate is a difficult task. While decision trees are powerful classifying
+        algorithms, they have their advantages and disadvantages. Unlike many machine learning algorithms, decision
+        trees are white-box, meaning the user can see the steps taken in order to classify an individual, and the
+        construction of the tree can be clearly explained; furthermore, they are easy to understand and interpret.
+        Generally, though, decision trees alone are not useful as they are unstable, lack flexibility, and are
+        relatively inaccurate compared to other algorithms.
+      </p>
+      <p>
+        While the COMPAS algorithm is proprietary, its mechanisms are likely more complex than a standard decision
+        tree. By adopting concepts from decision trees, we can build a more advanced model known as a random forest.
+        Instead of outputting one specific category, a random forest returns a probability of some outcome occurring
+        based on the results of many decision trees.&nbsp;For example, the decision tree for recisivism in the above
+        app will result in either a Yes or No response. Random forest algorithms provide the probability of a person
+        recidivating. When used to predict recidivism, we can use this probabilistic output to create a more equitable
+        model.</p>
 
-        <p>
-          A very useful aspect of random forests is that the result is an aggregation of many different, uncorrelated
-          decision trees. Each tree in a random forest is made from bootstrapped data -- a method where a new sample is
-          created by randomly selecting rows from the original sample (with replacement). Another reason random forests
-          produce different trees is because only a subset of variables are considered at each node of a tree’s
-          construction. Since trees are created with bootstrapping and we aggregate the results of many trees to return
-          a probability of an outcome, a random forest is known as a bagging algorithm.
-        </p>
-        <center>
-          <img src="recidivism/Recidivism 2.2.png" alt="Forest Image" width="70%">
-        </center>
-        <p style="color:grey"> This figure displays how forests reach their predictions</p>
-        <p>
-          In essence, random forests differ from a single decision tree in three ways:
-        </p>
-        <ol>
-          <li> Each tree in a random forest is created using a bootstrapped dataset that is the same size as the
-            original.</li>
-          <li> Only a subset of variables is considered at each node of a tree.</li>
-          <li> Classification of an individual is based on the result of many different, uncorrelated trees.</li>
-        </ol>
-        <p> <strong>Note:</strong> For more detail about random forests, it is recommended you watch this video <a
-            href="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ&ab_channel=StatQuestwithJoshStarmer">here.</a></p>
+      <p>
+        A very useful aspect of random forests is that the result is an aggregation of many different, uncorrelated
+        decision trees. Each tree in a random forest is made from bootstrapped data -- a method where a new sample is
+        created by randomly selecting rows from the original sample (with replacement). Another reason random forests
+        produce different trees is because only a subset of variables are considered at each node of a tree’s
+        construction. Since trees are created with bootstrapping and we aggregate the results of many trees to return
+        a probability of an outcome, a random forest is known as a bagging algorithm.
+      </p>
+      <center>
+        <img src="recidivism/Recidivism 2.2.png" alt="Forest Image" width="70%">
+      </center>
+      <p style="color:grey"> This figure displays how forests reach their predictions</p>
+      <p>
+        In essence, random forests differ from a single decision tree in three ways:
+      </p>
+      <ol>
+        <li> Each tree in a random forest is created using a bootstrapped dataset that is the same size as the
+          original.</li>
+        <li> Only a subset of variables is considered at each node of a tree.</li>
+        <li> Classification of an individual is based on the result of many different, uncorrelated trees.</li>
+      </ol>
+      <p> <strong>Note:</strong> For more detail about random forests, it is recommended you watch this video <a
+          href="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ&ab_channel=StatQuestwithJoshStarmer">here.</a></p>
 
-        After running training or testing data through a model, we can create confusion matrices to examine different
-        accuracy metrics. Based on ProPublica’s report, we can visualize the racial disparities of COMPAS by creating
-        different confusion matrices based on race:
+      After running training or testing data through a model, we can create confusion matrices to examine different
+      accuracy metrics. Based on ProPublica’s report, we can visualize the racial disparities of COMPAS by creating
+      different confusion matrices based on race:
 
-        <hr>
+      <hr>
       </aside>
 
 
@@ -243,10 +244,11 @@
       <br>
       <li>What other real-world applications could CART have?</li>
     </section>
-   
+
 
   </div>
-  <a href = "recidivism/Poster.pdf" style = "font-family: Georgia; font-size:24px;color:blue; float: center; width:100%" class="button button1">Click here to
+  <a href="recidivism/Poster.pdf" style="font-family: Georgia; font-size:24px;color:blue; float: center; width:100%"
+    class="button button1">Click here to
     see our major findings</a>
   <h2>&nbsp; </h2>
 
@@ -282,8 +284,12 @@
         <br>
         <br>
         <a href="statsgrounded1.html"> Statistically Grounded</a>
-
-
+        <br>
+        <br>
+        <a href="psychic1.html"> Psychic</a>
+        <br>
+        <br>
+        <a href="coaster1.html"> Coaster</a>
       </section>
 
       <section id="Useful Links" width="25%" style="float:left;padding-left:100px">
