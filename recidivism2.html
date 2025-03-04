@@ -72,7 +72,7 @@
         <img src="recidivism/Recidivism 2.1.jpg" alt="Justice" width="100%">
         In this next section, we explore two methods, Classification Trees and Random Forests in trying to predict
         recidivism. First, let's take a look at the data.
-        <h2>Description of the Data</h2>
+        <h3>Description of the Data</h3>
         <p>
           The data being used consists of 10,428 criminals in Broward County, Florida from the years 2013 to 2014 and
           contains past criminal history and what they were charged for when they were arrested. Moreover, it contains
@@ -80,7 +80,7 @@
           a description of each variable, please click <a href="recidivism/Data Description.xlsx">here.</a>
         </p>
 
-        <h2> Classification Trees</h2>
+        <h3> Classification Trees</h3>
         <p>
           Our first method of machine learning that we will look at are classification trees. To familiarize yourself,
           please watch the video below that goes through the process of creating a classification tree by using a sample
@@ -119,8 +119,10 @@
 
     </section>
 
-    <iframe src="https://bowsermince.shinyapps.io/CartRecid/" width="100%" height="1050px"
-      style="border:none;position:relative"></iframe>
+    <div style="width:60%;padding-left:1.5%; margin: 0 auto;">
+      <iframe src="https://bowsermince.shinyapps.io/CartRecid/" width="100%" height="1050px"
+        style="border:none;position:relative"></iframe>
+    </div>
 
     <section id="leftContent" style="
           width: 25%;
@@ -133,7 +135,7 @@
     </section>
 
     <section id="mainContent" style="line-height:1.65;width:45%;float:left">
-      <h2> Random Forests: Many Classification Trees</h2>
+      <h3> Random Forests: Many Classification Trees</h3>
       <p>
         Predicting if someone will recidivate is a difficult task. While decision trees are powerful classifying
         algorithms, they have their advantages and disadvantages. Unlike many machine learning algorithms, decision
@@ -189,62 +191,55 @@
   </div>
 
   <hr style="float:left;border:none;">
-  <div id="Second Section" style="height:auto">
 
-    <div style="width:100%;float:left; padding-left:1%">
+  <div style="width:100%;padding-left:1.5%; margin: 0 auto;">
 
-      <iframe src="https://bowsermince.shinyapps.io/Forest_app_recid/" width="100%" height="1050px"
-        style="border:none;position:relative"></iframe>
-
-      <hr>
-      <section style="width:50%;align-content:center;padding-left:24%">
-        <h2> Model Validation </h2>
-        <p style="font-size:20px">
-          While this was hinted in first section, we want to go through how model validation is done. The technique we
-          will be going through is called cross validation. Cross validation is a set of techniques used to measure how
-          well a model will generalize to data not used in its creation. The most basic cross validation technique is
-          the validation set approach. For this method, we divide the original dataset into two unique datasets: a
-          training dataset, used in the creation of the model, and a testing dataset, used in the validation of the
-          model. By having two independent sets, we can more equitably assess differences in accuracy between models.
-          This has already been done for you when you made your trees and forests above. How do the accuraccies differ
-          from the training dataset and the testing dataset?
-        </p>
-      </section>
-
-
-    </div>
+    <iframe src="https://bowsermince.shinyapps.io/Forest_app_recid/" width="100%" height="1050px"
+      style="border:none;position:relative"></iframe>
   </div>
-  <div style="width:50%;padding-left:25%;float:left">
-    <section style="font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
-      <h1>Additional Questions to Consider:</h1>
-      <li>In the application above, how is the filter tab useful?</li>
-      <br>
-      <li>Do people who were identified as female by the police have the same arrest patterns as those who were
-        identified as male?</li>
-      <br>
-      <li> In the application above, can we create a graphic that effectively uses both the &quot;Facet By&quot; and
-        &quot;Color By&quot; options?</li>
-      <br>
-      <li> What is the best accuracy you can achieve? </li>
-      <br>
-      <li> Do accuracies vary by race? </li>
-      <br>
-      <li> By age? </li>
-      <br>
-      <li> What implications does this have?</li>
-      <br>
-      <li> Why do you think accuracies can go down when more variables are added?</li>
-      <br>
-      <li>Should states across the US continue to use the COMPAS algorithm? Why or why not?</li>
-      <br>
-      <li>Can we guarantee justice in the courtroom for all individuals when inherently biased algorithms are used in
-        the decision process?</li>
-      <br>
-      <li>What questions should be asked before spending government money on such algorithms?</li>
-      <br>
-      <li>What other real-world applications could CART have?</li>
-    </section>
+  <section id="mainContent" style="line-height:1.65;width:100%; margin: 0 auto;">
+    <aside id="content1" style="width:45%;  margin: 0 auto;">
+      <hr>
+      <h3>Model Validation</h3>
+      <p>
+        While this was hinted in first section, we want to go through how model validation is done. The technique we
+        will be going through is called cross validation. Cross validation is a set of techniques used to measure how
+        well a model will generalize to data not used in its creation. The most basic cross validation technique is
+        the validation set approach. For this method, we divide the original dataset into two unique datasets: a
+        training dataset, used in the creation of the model, and a testing dataset, used in the validation of the
+        model. By having two independent sets, we can more equitably assess differences in accuracy between models.
+        This has already been done for you when you made your trees and forests above. How do the accuraccies differ
+        from the training dataset and the testing dataset?
+      </p>
+    </aside>
+  </section>
 
+  <div id="mainwrapper" style="width:75%">
+    <section id="mainContent"
+      style="line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
+
+      <h3>Discussion Questions <img src="images/GetCurious.jpg" width="35" height="32" alt="get curious icon" />
+      </h3>
+
+      <ul>
+        <li>In the application above, how is the filter tab useful?</li>
+        <li>Do people who were identified as female by the police have the same arrest patterns as those who were
+          identified as male?</li>
+        <li> In the application above, can we create a graphic that effectively uses both the &quot;Facet By&quot; and
+          &quot;Color By&quot; options?</li>
+        <li> What is the best accuracy you can achieve? </li>
+        <li> Do accuracies vary by race? </li>
+        <li> By age? </li>
+        <li> What implications does this have?</li>
+        <li> Why do you think accuracies can go down when more variables are added?</li>
+        <li>Should states across the US continue to use the COMPAS algorithm? Why or why not?</li>
+        <li>Can we guarantee justice in the courtroom for all individuals when inherently biased algorithms are used in
+          the decision process?</li>
+        <li>What questions should be asked before spending government money on such algorithms?</li>
+        <li>What other real-world applications could CART have?</li>
+      </ul>
+
+    </section>
 
   </div>
   <a href="recidivism/Poster.pdf" style="font-family: Georgia; font-size:24px;color:blue; float: center; width:100%"
