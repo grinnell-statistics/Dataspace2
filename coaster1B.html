@@ -150,22 +150,63 @@
 
       <div style="width:100%">
         <br>
-        <h3> Part 1C: Exploring Example Data</h3>
+        <h3> 1C: Designing a Coaster</h3>
 
-        <p>How well did you do at guessing the right cards? Before we come to any conclusions about psychic abilities,
-          we should carefully consider
-          several questions. For example:</p>
+        <p>
+          When designing your first roller coaster, you will create up to three functions, that when combined, will
+          represent a roller coaster path that is continuous and differentiable. This means the track (the combination
+          of
+          all three functions) must flow smoothly without any breaks or sharp turns. You'll need to submit the
+          following:
+        </p>
+        <ol>
+          <li>
+            The functions that represent the track.
+          </li>
+          <li>
+            Calculations showing how the track is continuous and differentiable at the points where the three functions
+            connect.
+          </li>
+          <li>
+            A screenshot of your coaster design and your final score.
+          </li>
+        </ol>
+        <p>
+          <strong>
+            You can build and visualize your coaster here:
+          </strong>
+
+          <a href="https://minh-nguyen-mn.itch.io/roller-coaster-calculus-8"> Roller Coaster Calculus 8 by
+            minh-nguyen-mn
+          </a>
+        </p>
+        <p>
+          Here are some key terms that will be recorded during the coaster game:
+        </p>
+
         <ul>
-          <li>How many does the average person, with no special abilities, get right?</li>
-          <li>How many would you need to correctly guess before we started to suspect there was something more going on
-            than random guessing?</li>
-        </ul>
-        <p>Before we analyze your data, let's look at a sample dataset from a previous class of students, <a
-            href="https://shiny.grinnell.edu/psychic1/">this
-            dataset</a>. Before answering any of the questions, make sure the settings in the app look like the image
-          below.</p>
-  </section>
+          <li>
+            The game will ask you for a Player ID. You can use any name you like, but this will be on the internet. Use
+            a
+            code name that you will remember, but do not use a name that will easily identify you.
+          </li>
+          <li>
+            Use the Group ID : friend
+          </li>
 
+          <li>
+            Click the Play button and enter your roller coaster functions.
+          </li>
+        </ul>
+        <p>
+          Your <strong>goal</strong> is to enter a smooth and continuous function that represent the most exciting
+          roller
+          coaster possible. The final score represents the level of excitement which is measured by the total changes in
+          elevation of your coaster.
+        </p>
+      </div> 
+
+  </section>
 
   <section id="rightContent">
     <aside id="rightcontent" style="width:100%">
@@ -206,98 +247,76 @@
     </div>
 
     <div style="width:60%;padding-left:1.5%;float:left">
-      <iframe src="https://shiny.grinnell.edu/psychic1/" width="105%" height="750px" style="border:none"></iframe>
+      <iframe src="https://shiny.grinnell.edu/coaster/" width="105%" height="750px" style="border:none"></iframe>
     </div>
 
-    <div id="mainwrapper" style="width:75%; height: auto">
-      <section id="mainContent"
-        style="line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
-        <iframe src="https://www.stat2games.sites.grinnell.edu/dataspaceForms/psychic1.php" width="100%" height="1300px"
-          style="border:none;padding-right:15px;padding-bottom: 1px"></iframe>
-      </section>
-    </div>
     <br>
 
     <div id="mainwrapper" style="width:75%">
       <section id="mainContent"
         style="line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
-        <h3>Part 1D: Hypothesis Testing and p-values <img src="images/Challenge.jpg" width="35" height="38"
-            alt="challenge icon" /></h3>
-
-        <p>The above activity can be used to explain the core ideas behind statistical hypothesis tests. Hypothesis
-          testing is a process used to determine
-          whether an event can reasonably be attributed to chance or whether there is some other explanation. </p>
-        <p>For example, let’s assume your friend, Akilah, claims to be psychic and you decide to test this claim using a
-          test similar to the one above. There are
-          two possible conclusions we can make.</p>
-
-        <li>Claim 1: Akilah has no special ability to predict the right card. Then we would expect that Akilah would
-          typically get 1 out of 5 guesses correct.
-          This would also be equivalent to saying the probability of success is 0.2. Statisticians write this as a null
-          hypothesis: Ho: p = 0.2.
-          Null hypotheses are typically what we assume before we collect any data. Here we use “p” to represent the
-          assumed proportion.</li>
-        <blockquote>
-          <p><strong>Note:</strong> In every null hypothesis we are making several corresponding assumptions. It is
-            important to identify these assumptions
-            before any test can be trusted. In this test, Claim 1 is also assuming:</p>
-          <ul>
-            <li>The above Psychic Test is truly random. We assume that this test is not manipulated in a way that allows
-              people to be more likely to guess the
-              right card correctly.</li>
-            <li>Akilah is only playing one game. In other words, we are collecting one sample of data with 10
-              observations (10 attempts). Akilah did not play
-              the game multiple times and only her best score was shown.</li>
-          </ul>
-        </blockquote>
-
-        <li>Claim 2: At least one of the assumptions in the null hypothesis is incorrect, meaning Akilah is expected to
-          do better than 1 out of 5 correct guesses. This
-          would also be equivalent to saying the probability of success is greater than 0.2. Statisticians write this as
-          an alternative hypothesis: Ha: p > 0.2.</li>
-        <blockquote>
-          <p><strong>Note:</strong> It is important to recognize that one hypothesis test, by itself, should never be
-            enough to prove a theory, but it can be used to
-            determine how much evidence there is to support a theory. * [[See the American Statistical Association
-            statement to see more details behind these ideas,
-            https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf]] </p>
-        </blockquote>
-
-        <p>Based on the data visualization in Part 1C, we can make conclusions based on Akilah’s score.</p>
-
-        <li>Case 1): Let’s assume Akilah played your game and got 4 out of 10 correct, she would have done better than
-          expected. However, the above app shows us that 12% of
-          the time people can get 4 or more correct just by chance. In terms of our statistical hypothesis test, the
-          p-value = 0.12 does not give evidence to believe Akilah
-          does better than the average person with no abilities. Thus the sample data (Akilah’s score) provides no
-          evidence to support the idea that Claim 2 is true. </li>
-        <blockquote>
-          <p>A p-value is a number between 0 and 1 that we use to quantify our decision. A p-value is the probability of
-            observing an outcome while
-            assuming that the null hypothesis and all corresponding assumptions are true. </p>
-          <p>In a hypothesis test, “no evidence” or "weak evidence" is typically associated with a large p-value
-            (greater than 0.05), "moderate
-            evidence" might fall in a range between 0.05 and 0.1, and "very strong evidence" would be a very small
-            p-value (such as 0.01 or
-            lower) signifying a highly significant result against the null hypothesis. </p>
-        </blockquote>
-
-        <p>The p-value is not the same as the p we use in our null and alternative hypotheses. </p>
-
-        <li>CASE 2) Let’s assume Akilah got 6 out of 10 guesses correct. If the null hypothesis is true (p = 0.2) the
-          probability that Akilah correctly guesses 6 or
-          more cards is 0.01. This may cause us to question the null hypothesis and conclude that something is helping
-          Akilah correctly guess the cards (at least one of the assumptions in the null hypothesis is incorrect. </li>
-        <blockquote>
-          <p>A p-value = 0.01 provides very strong evidence against the null hypothesis, meaning that it is unlikely,
-            but not impossible, that someone will correctly guess 6 or more cards just by random chance. However,
-            p-values
-            never prove that our alternative hypothesis is true; it simply tells us how unlikely the null hypothesis is
-            when only chance is involved. </p>
-          <p>Even if Case 2 is true, one hypothesis test does not prove Akilah has special abilities. Instead, we should
-            say, “The observed data provides some evidence that leads us to question the null hypothesis.” The questions
-            below discuss additional questions to consider when conducting hypothesis tests.</p>
-        </blockquote>
+        <div style="width:100%">
+          <h3>1D: Example <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon" /></h3>
+          <p>In the image to the left, we have created a simple roller coaster.</p>
+          <ol>
+            <li>
+              The first function (the green line) shows the lift ramp of a roller coaster. Here we entered a simple linear
+              function (y = 5 +1x). At the start of the roller coaster (x = 0), people would load at a height of y = 5.
+              Typically, a coaster will have some type of conveyor to get you to the top of the coaster, then gravity will
+              carry you through the rest of the coaster.
+            </li>
+            <li>
+              The equation entries require that the ending x value of the first equation is the starting value of the next
+              equation. This ensures that there are no horizontal gaps in the coaster.
+            </li>
+            <li>
+              The Graph and Math Check buttons allow us to verify that the coaster will work. To be continuous the y value
+              of the first function when x = 20 must equal the y value of the second function when x = 20. This ensures that
+              there are no vertical gaps in the coaster.
+            </li>
+            <li>
+              The second function is quadratic, allowing the coaster to have a smooth curve. If two linear equations are put
+              next to each other, the graph would have a sharp V-shaped curve, meaning that it would not be differentiable
+              (and not safe to ride).
+            </li>
+            <li>
+              In order to be differentiable the slope of the first line and the slope of the second line must also be equal
+              at x = 20.
+            </li>
+            <li>
+              Here the second and third functions are the same (except for the x-axis), this is not necessary, just two
+              equations could be listed and the cells in the last row can all be blank. To get more points, more curves are
+              needed.
+            </li>
+          </ol>
+    
+          <p>
+            In this version of the game, there are some restrictions:
+          </p>
+    
+          <ol>
+            <li>
+              You can enter 1, 2, or 3 functions.
+            </li>
+    
+            <li>
+              The x-axis must go from 0 to 50
+            </li>
+            <li>
+              The height of the coaster must always be greater than 0
+            </li>
+            <li>
+              Before building your coaster, you should use the Math Check button to ensure that your functions are
+              continuous and differentiable.
+            </li>
+            <li>
+              Your score, which is based on elevation changes, only starts after your coaster starts changing direction. In
+              other words, if you just draw a straight line that only goes up, your score will be 0.
+            </li>
+          </ol>
+  
+          </div>
+        
 
       </section>
     </div>
