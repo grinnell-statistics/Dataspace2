@@ -7,7 +7,6 @@
 	<title>Grinnell DataSpace </title>
 	<link href="css/Style1.css" rel="stylesheet" type="text/css">
 	<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-	<script>var __adobewebfontsappname__ = "dreamweaver"</script>
 	<script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js"
 		type="text/javascript"></script>
 </head>
@@ -172,15 +171,20 @@
 					</section>
 				</div>
 
-
-
-				<hr>
-
+        <!-- part 1b -->
+        <div>
+          <h2 style="font:bold;font-size:20px">
+            1B: Visualizing the Susceptible-Infectious-Recovered (SIR) Model
+          </h2>
+          <p>
+            The simulation below illustrates how SIR models are used to track the spread of disease. At any given time, each person (depicted as a colored dot) is placed into one of the SIR compartments. In this simple model, we start with a population of 100 people. This could represent the number of people on a cruise ship or a small island. Two infected people interact with the 98 susceptible people on the island, and the number of new infections rises quickly. 
+          </p>
+          <p>
+            Click the “play” button to see how the number of infected people quickly rises and then decreases as more people move to the recovered compartment.
+          </p>
+        </div>
 			</aside>
 		</section>
-
-
-
 
 		<section id="rightContent" style="width:20%">
 			<aside id="rightcontent" style="width:100%">
@@ -220,7 +224,6 @@
 
 			</aside>
 		</section>
-
 	</div>
 
 	<section id = "leftContent" style = "width:25%;float:left;height:500px;text-align:center;line-height: 1.7">
@@ -234,153 +237,77 @@
 		</div>
 	</div>
 
+  <!-- part 1c -->
 	<div id = "mainwrapper" style = "width:75%; height: auto">
-		
 		<section id = "mainContent" style = "line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
 		  <iframe src =  "https://www.stat2games.sites.grinnell.edu/dataspaceForms/covid1.php" width = "100%" height = "1500px" style = "border:none;padding-right:15px;padding-bottom: 1px"></iframe>
 		</section>
-		
-		
 	</div>
 
-	<div id="ThirdSectionwrapper" style="width:45%;margin:auto;font-size:18px;font-family:Georgia;line-height:1.65">
-		
-		
-		<br>
-		<h2 style="font:bold;font-size:20px">
-			<strong> Calculation Details </strong>
-		</h2>
+  <br>
+  <br>
 
-		
+  <!-- part 1d -->
+	<div id = "mainwrapper" style = "width:75%; height: auto">
+		<section id = "mainContent" style = "line-height:1.65;width:95%;height:auto;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
+      <h2 style="font:bold;font-size:20px">
+        Part 1D: Discussion Questions
+      </h2>
 
-		<p> Using the above app, set the initial conditions so that they fit the following assumed initial conditions.
-			You can then verify the numbers found in the app with the calculations shown below. </p>
+      <p>
+        The SIR model in the above app has several assumptions that help us keep the mathematics simpler: 
+      </p>
+      <ul>
+        <li>
+          The population is constant, no people are entering or leaving the population during the period we are studying.
+        </li>
+        <li>
+          The transmission rate is constant, we assume that everyone in the population is intermixing and everyone has an equal chance of contracting the disease.
+        </li>
+        <li>
+          Everyone who has the disease is sick for the same amount of time.
+        </li>
+        <li>
+          The virus stays constant, it doesn't mutate in any way.
+        </li>
+        <li>
+          People can only go from susceptible to infected and from infected to removed/recovered. In other words, once a person is in the removed compartment, they cannot infect others and they cannot contract the disease again.
+        </li>
+      </ul>
 
-		<li> <a> Population: N = 5000</a> </li>
-		<li> <a> Initial Infected: Infected<sub>Day = 1</sub>: 10 </a> </li>
-		<li> <a> Transmission Rate: 1</a> </li>
-		<li> <a> Recovery Rate: 0.3</a> </li>
-		<br>
-		<a> Calculating Recovered: </a>
-		<br>
-		<equation> Recovered<sub>2</sub> = Recovered<sub>1</sub> + (Infected<sub>1</sub> * Recovery Rate) </equation>
-		<br>
-		<equation style="padding-left:75px"> 3 = 0 + (10 * 0.3)</equation>
-		<br>
-		<br>
-		<a> Calculating Infected: </a>
-		<br>
-		<equation> Infected<sub>2</sub> = Infected<sub>1</sub> + (Infected<sub>1</sub> * Susceptible<sub>1</sub> *
-			Transmission Rate)/N - Recovered<sub>2</sub> </equation>
-		<br>
-		<equation style="padding-left:48px"> 17 = 10 + (10 * 4990 * 1)/5000 - 3 (Rounded) </equation>
-		<br>
-		<br>
-		<a> Calculating Susceptible:</a>
-		<br>
-		<equation> Susceptible<sub>2</sub> = Susceptible<sub>1</sub> - (Infected<sub>1</sub> * Susceptible<sub>1</sub> *
-			Transmission Rate)/N </equation>
-		<br>
-		<equation style="padding-left:55px"> 4980 = 4990 - (10 * 4990 * 1)/5000 (Rounded) </equation>
+      <p>
+        More complex compartment models are created to address each of these issues. However, it is essential to realize that all models are based on assumptions. 
+      </p>
+      
+      <ol>
+        <li>
+          Pick one of the above assumptions and discuss why it should not be used in modeling the COVID-19 pandemic.
+          <p>
+            It can be very helpful to create models that allow us to estimate the effects of a virus on the population. However, researchers can not know the actual transmission rate or recovery rates at the beginning of an epidemic. 
+          </p>
+          <p>
+            The model depends heavily on the assumptions made by the researchers who are developing the model. For example, what is the transmission rate when people are wearing masks versus when they are not wearing masks? How does social distancing help to lower the transmission rate? How do the two interact? The answers to questions such as these can have massive implications on the impact of an epidemic.
+          </p>
+        </li>
+        <li>
+          During the COVID-19 pandemic, there was a lot of discussion in the national news media about “flattening the curve.” What do you think was meant by this phrase in the context of the SIR model? Do you think this was a good description of the problem for a person with no technical understanding of the SIR model? Why or why not? 
+        </li>
+        <br>
+        <li>
+          A key measure used in epidemic modeling is Ro. This is a unitless measure of the total number of people each infected person will infect. R. is calculated as beta/gamma. It is the number of people an Infected person will infect times the number of days the person has been infected. Try various transmission rates and recovery rates in the app above and explain how a higher or lower Ro value will impact an epidemic.
+        </li>
+      </ol>
 
-		<h2>&nbsp;</h2>
-
-
-
-		<header>
-			<h2 style="font:bold;font-size:20px"><strong>Part 2:&nbsp; How Public Policy Can Influence Model
-					Assumptions</strong></h2>
-		</header>
-		<p> While SIR models can be insightful, you should quickly realize that the model depends heavily on the
-			assumptions made by the researchers who are developing the model. What is the transmission rate when people
-			are wearing masks versus when they are not wearing masks? How does social distancing help to lower the
-			transmission rate? How do the two interact? The answers to questions such as these can have massive
-			implications for how deadly the disease can be.</p>
-
-		<p> Let’s take a closer look at a couple of the parameters in our simple SIR model. </p>
-		<strong style="font-size:20px"> Transmission Rates</strong>
-
-		<p> If you change the transmission rate in the graphing application above, you’ll notice that lowering the
-			transmission rate by itself does not necessarily stop the spread of the disease. The true determinant of how
-			many people will ultimately get the disease is the ratio between the transmission rate and the recovery
-			rate. This is often referred to as the Reproducibility Number (R). This number tells us, on average, how
-			many additional people one infected person will infect over the entire course of their infection. As you can
-			see in the graph, if R is greater than 1—that is, if the transmission rate is greater than the recovery
-			rate—then an epidemic will occur since more people are being infected than are recovering. If R is less than
-			1, then the disease will die out as more people are recovering then being infected. If R is very close to 1,
-			there will be a constant rate of infections</p>
-
-		<p> The Reproducibility Number will change over the course of the epidemic; as people move from
-			<em>susceptible</em> to <em>recovered/removed</em>, the number of susceptible people shrinks and each
-			infected person will be able to cause fewer new infections. Thus epidemiologists often talk about
-			R<sub>0</sub>, or the Reproducibility Number on day 0 when everyone in the population is still susceptible.
-			You can also calculate R<sub>t</sub>, or the Reproducibility Number on day t, or the Reproducibility Number
-			on day <em>t</em>. As we can see in the graph, when the transmission rate is greater than recovery rate, we
-			can see that R<sub>t</sub> is initially greater than one and the number of people wh are infected every day
-			increases. Then, after infections reach peak on day <em>t</em> and start to decrease, R<sub>t</sub> is less
-			than 1. One of the major challenges in SIR modeling is that the transmission rate is non-constant. It is
-			time-dependent and can vary drastically. </p>
-
-
-		<strong style="font-size:20px"> Initial Infected </strong>
-		<p>
-			The initial infected parameter can also affect whether an outbreak will occur. Remember that for an epidemic
-			to occur, each person who is infected must infect, on average, more than one additional person over the
-			course of their infection. Let’s say the R<sub>0</sub> for a particular disease is 1.33, and at present only
-			one person is infected. That person can’t infect 1 and 1/3 of a person! Each whole person is either infected
-			or not, so the calculations in the SIR model are rounded to the nearest whole number. With an R<sub>0</sub>
-			of 1.33, in an SIR model that person will only infect one other person (1.33 will round down to 1), who will
-			also only infect one other person, and an epidemic will not occur. However, if 10 people are infected
-			initially, they will infect a total of 13 people between them, who will infect a further 17 people, and the
-			number of cases will grow into an epidemic. You can see this yourself using the graphing application or the
-			calculations above.
-		</p>
-		<strong style="font-size:20px"> Looking at the variability of SIR models</strong>
-		<p>
-			Predicting how the COVID-19 pandemic would progress quickly proved to be an incredibly challenging task. The
-			images below represent possible scenarios that the <a
-				href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html"> CDC </a> suggested early
-			in the pandemic based on different possible values for R<sub>0</sub>, using SIR simulations with a
-			population of 100,000. You can see from these images that altering the transmission rate and recovery rate
-			even slightly caused drastic changes in the predicted outcome for the pandemic. “Flattening the curve” by
-			reducing the transmission rate does reduce the total number of infections, but it still leads to a majority
-			of the population being infected. The number of people infected on the peak day of infections is
-			dramatically lower, reducing the strain on the healthcare system, but the trade-off is that the epidemic
-			lasts longer.
-		</p>
-		<p>It is important to note that changing the recovery rate has little effect on how long the epidemic will last
-			or how many people will ultimately be infected, unlike changing the transmission rate.
-		</p>
-		<section style="width:120%">
-			<img src="covid/Rplot High Low Transmission.png" width="69%">
-			<img src="covid/Rplot High Low Recovery Level.png" width="60%">
 		</section>
-		<h2>&nbsp;</h2>
-
-		<strong style="font-size:20px"> Model Complexity and Assumptions </strong>
-		<p> We must remember that the model we have been looking at is very basic. The differences between the possible
-			predicted outcomes become even more apparent as researchers increase the complexity of the models by, for
-			example, adding parameters to account for an incubation period for the disease, for quarantine or isolation
-			measures, or for the possibility of reinfection. When there is great uncertainty around the correct numbers
-			to use for the model inputs, or even around which parameters need to be included in the model, any
-			predictions produced by these models will be very uncertain as well. This uncertainly prevents creating <a
-				href="https://doi.org/10.1016/j.bjid.2020.04.003">reliable projections for the course of the
-				outbreak</a>, which frustrates efforts to contain outbreaks and worsens the already devastating burdens
-			on the healthcare system and the economy. Careful attention must be given to the assumptions made when using
-			any model, whether it be an SIR or a statistical model.
-		</p>
-		<strong style="font-size:20px"> Additional Resources </strong>
-		<p style="font-size:20px">
-			To view a more complex shiny app with more variables for modeling Covid, click <a
-				href="https://alhill.shinyapps.io/COVID19seir/"> here</a>. Grinnell College students Senay Gockcebel,
-			Britney He, Bowen Mince, and Linh Tang did a simulation study on a more complex model. See the paper <a
-				href="covid/Paper.pdf">here</a>. The Github for it can be reached <a
-				href="https://github.com/LinhTangTD/COVID19_Modeling"> here</a>.
-		</p>
-
-
 	</div>
 
+  
+  
+  
+  
+  
+  
+  
 
 
 
