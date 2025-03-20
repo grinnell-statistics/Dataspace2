@@ -68,58 +68,74 @@
 
 				<h1
 					style="font-family:Georgia;color:Black;font-size:42px;width:100%;line-height:1.10;text-align: center">
-					How do we better understand epidemic models and how public policy can influence the disease spread?
+					Exploring Epidemic Models 
 				</h1>
 				<img src="covid/Stock 1.1.jpg" alt="Police" style="width:100%">
 
-				<h2>Introduction</h2>
-				<p> Think back to the early days of the COVID-19 pandemic, shortly after a novel coronavirus disease was
-					first identified and reported on December 31, 2019. Within weeks, the virus had spread to dozens of
-					countries, with cases climbing quickly. Hospitals rapidly became <a
-						href="https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(21)00068-0/fulltext">overloaded
-						and short-staffed</a>, ICU beds were full, and healthcare workers were put under an immense
-					mental and physical toll, having to work overtime under psychological distress.
+				<h2>Part 1 Introduction</h2>
+				<p> On December 31, 2019, health authorities worldwide received a sobering wake-up call: a mysterious 
+					virus had emerged in Wuhan, China, and was beginning to spread. Within weeks, this unidentified 
+					threat crossed borders, reaching countries across the globe. Case numbers surged dramatically, 
+					overwhelming hospitals, filling intensive care units, and stretching healthcare professionals to 
+					their breaking point as they fought to contain the escalating crisis.
 				</p>
 				<p>
-					Numerous government organizations have been turning to epidemiologists to:
+					When a new virus appears—whether it’s a familiar nuisance like the common cold or a worldwide 
+					emergency like a pandemic—scientists rely on a critical tool: <strong>epidemic modeling</strong>. This approach 
+					provides answers to pressing questions: 
+
+				</p>
+				<ul>
+					<li> How quickly will this virus spread?</li>
+					<li> How many people will be affected?</li>
+					<li> What can we do to slow or stop the outbreak?</li>
+				</ul>
+					
+
+				<hr>
+				<h2 style="font-size:20px"><strong>1A: <span style="font-size:18px"> 
+					What Influences the Spread of a Viral Disease?</span></strong></h2>
+
+
+
+				<p>In this article, we explore how the Susceptible-Infectious-Recovered (SIR) 
+					model can address the above questions. It is a compartment-based model, 
+					meaning each person in the population is considered to be within one of 
+					the following three groups:
+					<ul>
+						<li><strong style="color: rgb(236, 207, 23);">Susceptible (S):</strong> People who haven’t been infected yet.
+						</li>
+						<li><strong style="color: red;">Infected (I):</strong> People currently infected and able to pass the disease on.
+						</li>
+						<li><strong style="color: rgb(115, 115, 241);">Recovered/Removed (R):</strong> People who have recovered from the 
+							disease or have died and been removed from the population. Either way, they are no longer infected or susceptible 
+							to infection.
+						</li>
+					</ul>
+
+					While simplified, the SIR model serves as the foundation for more complex models used by government organizations 
+					to monitor and analyze the progression of a pandemic. It helps predict the trajectory of an epidemic, providing 
+					valuable insights that inform decisions to protect public health.
 				</p>
 				<p>
-					1) Understand and predict how the pandemic will progress, and </p>
-				<p>
-					2) Determine which actions to take to prevent the spread of the disease. </p>
-				<p>This site will discuss both of these core ideas. While the model shown below is a simplified model,
-					it is very similar to the models used by many government organizations in the early days of the
-					pandemic. </p>
+				Four key variables influence how many people move from one of the SIR compartments to another.
+				<ul>
+					<li><strong>Population (N):</strong>The total number of people in the population. </li>
+					<li><strong>Initial Infected (I0):</strong>The number of people infected with the disease on the day that
+						 the model "starts".</li>
+					<li><strong>Transmission Rate ():</strong>A measure of how quickly the disease will spread. This is the 
+						expected number of susceptible people that each infected person will infect per day.</li>
+					<li><strong>Recovery Rate ():</strong>This is the expected proportion of people who are currently infected
+						 who will move to the recovered/removed compartment per day.</li>
+				</ul>
+
+				In reality, the transmission and recovery rates are unknown, especially at the beginning of an epidemic. Thus, researchers
+				must estimate each of the values. More detailed calculations are provided later. For now, we can use the app below to see
+				how these parameters can influence how quickly the virus spreads and the number of people infected. 
 
 
-				<h2 style="font:bold;font-size:20px"><strong>Part 1:&nbsp;A <span style="font-size:18px"> Susceptible
-							(S), Infected (I), and Recovered (R) </span> Model</strong></h2>
-
-
-
-				<p>Epidemiologists often use SIR models to represent the spread of diseases. This is a compartment-based
-					model, meaning each person in the population is considered to be within one of several compartments.
-					In this model, each person in a population is considered to be either Susceptible (S), Infected (I),
-					or Recovered/Removed (R). This means that at any given time, a person is either:
-					<li> <em>Susceptible</em> to infection, meaning that they have not yet been infected.</li>
-					<li> <em>Infected</em>, meaning that they currently have the disease and are capable of spreading it
-						to other <em>susceptible</em> people. In other words, they are contagious.</li>
-					<li> <em>Recovered/Removed</em>, meaning that the person is no longer contagious; they have either
-						recovered from the disease or have died and been removed from the population. Either way, they
-						are no longer <em>infected</em> or <em>susceptible</em> to infection.</li>
-
-					Then, equations are used to determine how people in the population will move from
-					<em>susceptible</em> to <em>infected</em> and from <em>infected</em> to <em>recovered/removed</em>.
 				</p>
-				<section class="6u">
-					<a href="#" class="image full"><img src="covid/SIR model image.PNG" alt=""
-							style="width:700px;height:300px;"></a>
-					<figcaption style="width:800px;height:20px;font:italic;font-size:18px"><em>Figure 1A: Compartmental
-							SIR models are most common. At any given point in time, each person in the population can be
-							located in exactly one compartment, although they can move between compartments over time.
-						</em></figcaption>
-					<figcaption style="width:800px;height:20px;font:italic">&nbsp;</figcaption>
-				</section>
+				
 				<br>
 				<br>
 				<h2 style="font:bold;font-size:18px"><strong>Exploring an SIR Model</strong></h2>
