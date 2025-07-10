@@ -48,8 +48,7 @@
           <a href="greenhouse1.html">Greenhouse</a>
           <a href="statsgrounded1.html">Stats Grounded </a>
           <a href="psychic1.html"> Psychic </a>
-          <a href="coaster1.html"> Roller Coaster</a>
-          <a href="statspital1.html"> Statspital</a>
+          <a href="coaster1.html">Roller Coaster</a>
         </div>
       </div>
 
@@ -90,7 +89,7 @@
 
       <img src="coaster/coaster.jpg" alt="Coaster image" style="width:100%">
 
-      <h3> Part 2A: Introduction</h3>
+      <h3> Part 2 Introduction</h3>
       <p>Have you ever wondered what goes into designing a thrilling roller coaster? For example, have you ever
         experienced
         that rush of adrenaline as you plummet down a steep drop or twist through a high-speed turn? What makes certain
@@ -98,13 +97,14 @@
         all about the engineering? The activity below allows you to use concepts from calculus to design your own roller
         coaster.
       </p>
-
+        
+      <br>
       <h3> Part 2B: Connecting Calculus and Coasters</h3>
       <p>This activity will focus on two core concepts discussed in most calculus classes: continuity and
         differentiability.</p>
 
-      <p><strong>Continuity:</strong>continuous functions do not have any jumps or gaps.</p>
-      <p><strong>Differentiability:</strong>a function is differentiable at a point when it is continuous and changes in
+      <p><strong>Continuity: </strong>continuous functions do not have any jumps or gaps.</p>
+      <p><strong>Differentiability: </strong>a function is differentiable at a point when it is continuous and changes in
         a smooth manner without sudden changes in direction.
         In other words, the function must not have any sharp turns (like a "V" shape) at any point. The instantaneous slope (i.e. the
         derivative) can be calculated at each point.</p>
@@ -119,45 +119,34 @@
         <h3> Part 2C: Designing a Coaster</h3>
 
         <p>
-          When designing your first roller coaster, you will create a piecewise function that represents a continuous and differentiable roller coaster path.
-          This means the track must flow smoothly without any breaks or sharp turns.
-          You'll need to submit the following:
+          When designing your first roller coaster, you will create a piecewise function that represents a continuous and 
+          differentiable roller coaster path. This means the track (the combination of
+          all three functions) must flow smoothly without any breaks or sharp turns.
         </p>
-        <ol>
-          <li>
-            The functions that represent the track.
-          </li>
-          <li>
-            Calculations showing how the track is continuous and differentiable at the points where the three functions
-            connect.
-          </li>
-          <li>
-            A screenshot of your coaster design and your final score.
-          </li>
-        </ol>
-        <p>
-          <strong>
-            You can build and visualize your coaster using the game Roller Coaster Game below.
-          </strong>
-        </p>
+        <p><b>Goal:</b> Create a coaster with the most vertical distance travelled.</p>
+        <p></p>
+
+        <p><b>Base Rules:</b></p>
+        <ul>
+            <li>Enter at least one equation.</li>
+            <li>The coaster must start at (x=0, y=0) and end at (x = 50, any y).</li>
+            <li>The maximum y value is 500.</li>
+            <li>Equations need to be smoooth and connected.</li>
+            <li>For every equation, y must be 0 or higher.</li>
+            <li>Going up the first hill does not count towards your score.</li>
+        </ul>
         <p>
           Here are some key terms that will be recorded during the coaster game:
         </p>
-
         <ul>
-          <li>
-            The game will ask you for a Player ID. You can use any name you like, but this will be on the internet. Use
-            a
-            code name that you will remember, but do not use a name that will easily identify you.
-          </li>
-          <li>
-            Use the Group ID : friend
-          </li>
-
-          <li>
-            Click the Play button and enter your roller coaster functions.
-          </li>
+            <li><b>Player ID:</b> You can use any name you like, but please note that it will be visible on the internet. Use a code name that you will remember, but do not use a name that will easily identify you.</li>
+            <li><b>Group ID:</b> You can use any name you like. However, if you are playing this game for a course, use the exact Group ID provided by your instructor, which is the same for every person in the class.</li>
+            <li>Click the <b>Play</b> button</li>
+            <li>Select <b>Level 1</b> and enter your roller coaster functions.</li>
         </ul>
+        <p>
+          <i>It may be helpful to use a graphing tool, such as Desmos, to explore various functions that can be used in your roller coaster design.</i>
+        </p>
         <p>
           Your <strong>goal</strong> is to enter a smooth and continuous function that represent the most exciting
           roller
@@ -167,81 +156,54 @@
         <iframe src="https://stat2games.sites.grinnell.edu/games/coaster.html"
           style="width: 150%; height: 700px; border: none;"></iframe>
 
-        <p><strong>NOTE</strong>: If you are unable to play the game, either try a different browser or go to the game website directly <a href="https://stat2games.sites.grinnell.edu/games/coaster.html"target="_blank">here.</a>
+        <p><strong>NOTE</strong>: If you are unable to play the game, either try a different browser or go to the game website directly <a href="https://stat2games.sites.grinnell.edu/games/coaster.html"target="_blank">here.</a> 
+        The game may take time to load.
         </p>
 
-        <h3>1D: Example <img src="images/Challenge.jpg" width="35" height="38" alt="challenge icon" /></h3>
-        <p>In the Figure 1, we have created a simple roller coaster.</p>
+        <br>
+        <h3> Part 2D: Example - Level 1 Coaster</h3>
+        <p>We will step through entering a piecewise function into the coaster game in order to get a feel for how the game interacts with piecewise functions.</p>
         <ol>
           <li>
-            The first function (the green line) shows the lift ramp of a roller coaster. Here we entered a simple
-            linear
-            function (y = 5 +1x). At the start of the roller coaster (x = 0), people would load at a height of y = 5.
-            Typically, a coaster will have some type of conveyor to get you to the top of the coaster, then gravity
-            will
-            carry you through the rest of the coaster.
+            Typically, a coaster will have some type of conveyor to get you to the top of the coaster, and then gravity will carry you through the rest of the coaster. 
+            For the first part of our piecewise function, we create a lift ramp or conveyor. For example, we enter a linear equation:
+            <div style="text-align: center; margin: 20px 0; font-family: 'Times New Roman', serif; font-size: 1.2em; font-style: italic;">
+                f(x) = 0 + x    &nbsp;&nbsp;&nbsp;&nbsp;   for  &nbsp;&nbsp;&nbsp;&nbsp;    0 < x < 20
+            </div></li>
+            This means that at the start of the roller coaster (x = 0), people would load at ground height (a requirement of our game). 
           </li>
           <li>
-            The equation entries require that the ending x value of the first equation is the starting value of the
-            next
-            equation. This ensures that there are no horizontal gaps in the coaster.
+            Note that for our function to be continuous, the equation entries require that the ending x value of the first equation is the starting value of the following equation. 
+            This ensures that there are <b>no horizontal gaps</b> in the coaster (and the game does this automatically!)
           </li>
           <li>
-            The Graph and Math Check buttons allow us to verify that the coaster will work. To be continuous the y
-            value
-            of the first function when x = 20 must equal the y value of the second function when x = 20. This ensures
-            that
-            there are no vertical gaps in the coaster.
+            Furthermore, to be continuous, the y value of the first function when x = 20 must equal the y value of the second function when x = 20. This ensures that there are <b>no vertical gaps</b> in the coaster. For example, we could enter the second part of our piecewise equation as
+            <div style="text-align: center; margin: 20px 0; font-family: 'Times New Roman', serif; font-size: 1.2em; font-style: italic;">
+                f(x) = 30 - 0.5x    &nbsp;&nbsp;&nbsp;&nbsp;   for  &nbsp;&nbsp;&nbsp;&nbsp;    20 < x < 50
+            </div></li>
+            Use the <b>“Graph”</b> and <b>“Math Check”</b> buttons to verify whether this coaster will work. Does this coaster work? Why or why not? What computation(s) provide proof of your answer?
           </li>
           <li>
-            The second function is quadratic, allowing the coaster to have a smooth curve. If two linear equations are
-            put
-            next to each other, the graph would have a sharp V-shaped curve, meaning that it would not be
-            differentiable
-            (and not safe to ride).
-          </li>
-          <li>
-            In order to be differentiable the slope of the first line and the slope of the second line must also be
-            equal
-            at x = 20.
-          </li>
-          <li>
-            Here the second and third functions are the same (except for the x-axis), this is not necessary, just two
-            equations could be listed and the cells in the last row can all be blank. To get more points, more curves
-            are
-            needed.
+            Let’s try instead making the second part of our piecewise function a quadratic, for example,
+            <div style="text-align: center; margin: 20px 0; font-family: 'Times New Roman', serif; font-size: 1.2em; font-style: italic;">
+                f(x) = -20 + 3x - 0.05x²   &nbsp;&nbsp;&nbsp;&nbsp;   for  &nbsp;&nbsp;&nbsp;&nbsp;    20 < x < 50
+            </div></li>
+            Use the <b>“Graph”</b> and <b>“Math Check”</b> buttons to verify whether this coaster will work. Does this coaster work? Why or why not? What computation would provide proof of your answer?
           </li>
         </ol>
-
-        <p>
-          In this version of the game, there are some restrictions:
-        </p>
-
-        <ol>
-          <li>
-            You can enter 1, 2, or 3 functions.
-          </li>
-
-          <li>
-            The x-axis must go from 0 to 50
-          </li>
-          <li>
-            The height of the coaster must always be greater than 0
-          </li>
-          <li>
-            Before building your coaster, you should use the Math Check button to ensure that your functions are
-            continuous and differentiable.
-          </li>
-          <li>
-            Your score, which is based on elevation changes, only starts after your coaster starts changing direction.
-            In
-            other words, if you just draw a straight line that only goes up, your score will be 0.
-          </li>
-        </ol>
+        
+        <br>
+        <h3> Part 2E: Exploring Level 1 Coasters</h3>
+        <p>You’ll notice that for our example above, when we hit the “Build” button, the thrill score of the coaster is 20. Your goal is now to create a piecewise function that creates a valid coaster with a higher thrill score.</p>
+        <p>Recall that under the Level 1 setting of the game, there are some restrictions:</p>
+        <ul>
+            <li>You can enter 1, 2, or 3 functions</li>
+            <li>The x-axis must go from 0 to 50</li>
+            <li>You can use the <b>Math Check</b> button to ensure that your functions are continuous and differentiable</li>
+            <li>Your score, which is based on elevation changes, only starts after your coaster begins to change direction. In other words, if you just draw a straight line that only goes up, your score will be 0.</li>
+        </ul>
     </aside>
   </section>
-
-
 
   <!-- Shiny app -->
   <div style="display: flex; justify-content: center; width: 100%;">
@@ -250,82 +212,53 @@
     </div>
   </div>
 
-  <br>
   <div id="mainwrapper" style="width:75%">
     <section id="mainContent"
       style="line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
 
       <div style="width:100%">
-        <h3> 1E: Comparing Coasters</h3>
-        <p>
-          How fun do you think your coaster would be? Before we come to any conclusions, use the following <a
-            href="https://shiny.grinnell.edu/coaster/">shiny app </a> to look at the other coasters people in your
-          class
-          made.
-        </p>
-        <ul>
-          <li>
-            In the Group ID section, make sure only the Group ID for your class is selected.
-          </li>
-          <li>
-            Check the “show high score table” option.
-          </li>
-          <li>
-            Which Player ID had the highest score in your class?
-          </li>
-          <li>
-            What strategies appear to be the most important in getting a high score?
-            <ul>
-              <li>
-                What strategies appear to be the most important in getting a high score?
-              </li>
-              <li>
-                Does their coaster look practical to build in real life?
-              </li>
-              <li>
-                What restrictions would make the coaster game more practical?
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <h3> Part 2F: Discussion Questions</h3>
+        <ol>
+            <li>What was your maximum coaster score, and the equations that achieved it?</li>
+            <li>What calculations need to be done to verify that your coaster is continuous and differentiable at every point?</li>
+            <li>What strategies did you use to design your coaster and why?</li>
+            <li>If you were to design a new roller coaster game, what restrictions would you have?
+                <ul>
+                    <li>Does it make sense to assume the function can’t go below 0?</li>
+                    <li>Should we require that when x = 0 the height should be 0 as well?</li>
+                    <li>Discuss any other rules that should be implemented to model a real coaster more accurately.</li>
+                </ul>
+            </l>
+        </ol>
       </div>
     </section>
   </div>
   <br>
 
-
-
   <div id="mainwrapper" style="width:75%">
     <section id="mainContent"
       style="line-height:1.65;width:95%;float:left; font-size:20px;border:3px; border-style:solid; border-color:#000;padding:5px 20px 20px">
 
-      <h3>1F: Discussion Questions <img src="images/GetCurious.jpg" width="35" height="32" alt="get curious icon" />
+      <h3>Part 2G: Challenge - Level 2 Coasters <img src="images/GetCurious.jpg" width="35" height="32" alt="get curious icon" />
       </h3>
+      <p>
+        As you were working on the Level 1 Coasters, you may have felt restricted and wanted to be able to use more parts of a piecewise function and/or 
+        higher degree polynomials. Well, you’re in luck - now you can do that by trying Level 2 of the game!
+      </p>
+      <p>
+        Your goal is now to create a piecewise function that creates a valid coaster with a higher thrill score than you could in Level 1, by trying 
+        Level 2. You’ll notice that many of the same rules apply, but in this setting, you can use up to 5 parts of a piecewise function and cubic equations.
+      </p>
+      <p><i>Note: If you’ve completed the challenge, revisit Part 2F: Discussion Questions and see if any of your answers have changed. Additionally, you should think about:</i></p>
       <ul>
         <li>
-          If you were to design a new roller coaster game, what restrictions would you have?
-          <ul>
-            <li>
-              Does it make sense to assume the function can't go below 0?
-            </li>
-            <li>
-              Should we require that when x = 0 the height should be 0 as well?
-            </li>
-            <li>
-              Should we require that the beginning and ending of the track needs to be horizontal?
-            </li>
-            <li>
-              Should the first hill be higher than all the others? Why is this typically important?
-            </li>
-            <li>
-              Discuss any other rules you think should be implemented.
-            </li>
-
-          </ul>
+          What was easier and what was harder about this level?
         </li>
         <li>
-          Would you expect to have a more exciting coaster if you used cubic and exponential equations instead of
-          linear and quadratic? Explain why.
+          Should the first hill of your coaster be higher than all the others? Why is this typically important?
+        </li>
+        <li>
+          Should we require that the beginning and end of the track be horizontal? Why or why not?
         </li>
       </ul>
     </section>
@@ -372,10 +305,7 @@
         <a href="psychic1.html"> Psychic</a>
         <br>
         <br>
-        <a href="coaster1.html"> Roller Coaster</a>
-        <br>
-        <br>
-        <a href="statspital1.html"> Statspital</a>
+        <a href="coaster1.html">Roller Coaster</a>
       </section>
 
       <section id="Useful Links" width="25%" style="float:left;padding-left:100px">
