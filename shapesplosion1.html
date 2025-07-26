@@ -51,6 +51,7 @@
 		   <a href = "coaster1.html"> Roller Coaster</a>
 		   <a href = "statspital1.html"> Statspital</a>
 		   <a href = "tangrams1.html"> Tangrams</a>
+		   <a href = "shapesplosion1.html"> Shapesplosion</a>
 		</div>
 	   </div>
 		 
@@ -64,8 +65,8 @@
 	<h2>&nbsp;  </h2>
 
 		<div id="mySidenav" class="sidenav">
-		  	<a href="tangrams1.html" id="part1"><strong>Part 1</strong></a>
-		 	<a href="tangrams2.html" id="part2"><strong>Part 2</strong></a>
+		  	<a href="shapesplosion1.html" id="part1"><strong>Part 1</strong></a>
+		 	<a href="shapesplosion2.html" id="part2"><strong>Part 2</strong></a>
 		  	<!--<a href="statspital3.html" id="part3"><strong>Part 3</strong></a>
 		  	<a href="https://codap.concord.org/app/static/dg/en/cert/index.html#shared=https%3A%2F%2Fcfm-shared.concord.org%2FRQNRtZQRXivSUUHyWxDm%2Ffile.json" id="part4" style="background-color: #777777;margin-top:170px"><strong>Codap</strong></a>
 		  	<a href="https://shiny.grinnell.edu/GHTutorial/" id="part5" style="background-color:#555555;margin-top:230px"><strong>R-Lab</strong></a>-->
@@ -76,8 +77,8 @@
 		
 	<div style = "width:80%;float:left;font-family:Georgia;color:Black;font-size: 18px; text-align: left; padding-left: 26%">
 		<p> <strong>Figure 1 & 2:</strong> Settings to start Tangrams Game for Part 1</p>
-		<img src="tangrams/tangramsfig1.png" alt="settings to start game" width="100%" >
-		<img src="tangrams/tangramsfig2.png" alt="settings to start game" width="100%" >
+		<img src="shapesplosion/shapesplosionfig1.png" alt="settings to start game" width="100%" >
+		<img src="shapesplosion/shapesplosionfig2.png" alt="settings to start game" width="100%" >
 		
 		<!--<p> <strong>Figure 3 & 4:</strong> Settings to generate data for Part 1</p>
 	  <img src="statspital/tangramsfig3.png" alt="settings to generate data" width="100%" >
@@ -94,56 +95,65 @@
 	<aside id="content1" style = "width:100%">
 
 		
-			<h1 style = "font-family:Georgia;color:Black;font-size:42px;width:100%;line-height:1.10;text-align: center"> Tangrams</h1>
-	<h3 style = "color:black;text-align: center"> One Sample Hypothesis Test</h3>
+	<h1 style = "font-family:Georgia;color:Black;font-size:42px;width:100%;line-height:1.10;text-align: center"> Shapesplosion</h1>
+	<h3 style = "color:black;text-align: center">Regression</h3>
 		
 	<p style = "text-align:center;font-size: 14px"><em>Contributors: Shonda Kuiper, Yueran (Sarah) Qi' 27<!--, <a href = "https://dasil.sites.grinnell.edu">DASIL</a>--></em></p>
 		
-	<img src = "tangrams/tangrams image.png"  alt = "Tangrams image" style = "width:100%">
-	<p style = "text-align:left;font-size: 14px">Bankrx photos, images, assets. Adobe Stock. (n.d.). <a href = "https://stock.adobe.com/contributor/206072775/bankrx">bankrx - stock.adobe.com</a></p>
+	<img src = "shapesplosion/shapesplosion.png"  alt = "shapesplosion image" style = "width:100%">
+	<p style = "text-align:left;font-size: 14px">Joe. (2023, August 1). 12 fun preschool shapes activities to try. Early Impact Learning. 
+		<a href= "https://earlyimpactlearning.com/12-fun-preschool-shapes-activities-to-try/">https://earlyimpactlearning.com/12-fun-preschool-shapes-activities-to-try/</a></p>
 		
 	<h3> Part 1A: Introduction</h3>
         <p>
-		Tangram is an ancient Chinese puzzle where players arrange geometrically shaped pieces into a particular
-        design by flipping, rotating, and moving them. In this lab, you will be playing an online game, <b>Tangrams</b>. In this game, 
-		you will have the opportunity to design many versions of the original game, and you will play the role of a statistician as you 
-		design a study, collect data, and then analyze and interpret the results. Your goal is to arrange the geometric shapes on the left, 
-		called tans, into a specific pattern or design on the right as quickly as possible.
+		When the author of this lab sat down with her 5 year old son to teach him how to tie his shoes, she was surprised that she couldn't tell him how to do it. 
+		Even though she ties her own or her children's shoes almost every day, she had to tie the shoe herself, and watch each step before she could break down the steps in order to teach her son. 
+		This is just one example of <b>automatized behaviors</b> (see details in the Fun Fact), which are behaviors that can be done automatically without carefully thinking through each step in the process.</p>
+		
+		<p>The Stroop effect demonstrates that automatized behaviors can interfere with other desired behaviors. John Stroop (1935) tested the reaction time of college undergraduates in identifying colors. 
+		Students took a longer time identifying colors of ink when the ink was used to spell a different color. For example, if the word “<span style="color: #0000FF">green</span>” was printed in blue ink, students took longer to identify the color blue because they automatically read the word "green". 
+		Even though students were told only to identify the ink color, the automatized behavior of reading interfered with the task and slowed their reaction time.</p>
+		
+		<p>In the following lab you will be asked to play a shape-matching game in order to determine if there is a relationship between playing a standard game and playing with distracting colors.</p>
+
 		<hr>
 </p>
-    <h3> Part 1B: Playing Tangrams</h3>
+    <h3> Part 1B: Playing Shapesplosion</h3>
         </p>
-		In Tangrams, you need to move the geometirc shapes on the left (tans) into a specific pattern or design on the right.<br><br>
 
 	    <b>Controls: </b>   
-        <li>Move the <b>Mouse</b> to drag the geometirc shapes on the left (tans) to the design on the right.</li>
-        <li>Click the <b>Rotate Left Button</b> <img src = "tangrams/rotateleft.png" alt = "rotate left" style = "height:2em; vertical-align:middle"> to rotate the shape counterclockwise.</li>
-		<li>Click the <b>Flip Button</b> <img src = "tangrams/flip.png" alt = "flip" style = "height:2em; vertical-align:middle"> to flip the shape.</li>
-        <li>Click the <b>Rotate Right Button</b> <img src = "tangrams/rotateright.png" alt = "rotate right" style = "height:2em; vertical-align:middle"> to rotate the shape clockwise.</li>
-		<li>Click <b>Hint</b> see a hint.</li>
-		<li>Click <b>Reset</b> to reset the shape back to the left panel.</li>
-		<li>Click <b>Quit</b> to exit the game and return to the main menu.</li>
+        <li>Move the <b>Mouse</b> to drag the shapes on the left to their molds on the right.</li>
+		<li>Click <b>Main Menu</b> to exit the game and return to the main menu.</li>
 		<br>
 
-		<b>Goal: </b>Arrange the geometric shapes on the left, called tans, into a specific pattern or design on the right as quickly as possible.<br><br>
+		<b>Goal: </b> Match the shapes on the left screen to their molds on the right screen as quickly as possible<br><br>
 
 		<b>Play: </b>
-		<li><span style="color: #6D4C84; font-weight: bold;">Player ID </span>
+		<li><span style="color: #5CA7C8; font-weight: bold;">Player ID </span>
 		The game will ask you for a Player ID. You can use any name you like, but this will be on the internet, so do not use a name that will easily identify you.
 		</li>
 		
-		<li><span style="color: #6D4C84; font-weight: bold;">Group ID </span>
+		<li><span style="color: #5CA7C8; font-weight: bold;">Group ID </span>
 		If you are playing this game for a course, your instructor will provide a Group ID so you will be able to compete with everyone in your class.
 		</li>
 		
-		<li>Click <span style="color: #6D4C84; font-weight: bold;">Select Puzzle Type</span></li>
-		<li>Choose <span style="color: #6D4C84; font-weight: bold;">Time Limit</span></li>
-		<li>Click <span style="color: #6D4C84; font-weight: bold;">Start</span></li>
+		<li>Choose <span style="color: #5CA7C8; font-weight: bold;">Matching Scheme </span>There are 4 game types that you can choose from:
+			<ol>
+				<li>Matching Shapes, One Color (all the same color)</li>
+				<li>Matching Shapes, Matching Color (colors are helpful)</li>
+				<li>Matching Shapes, Random Color (colors add difficulty)</li>
+				<li>Matching Colors, One Shape</li>
+			</ol>
+		</li>
+		<li>Choose <span style="color: #5CA7C8; font-weight: bold;">Time </span>You can choose to restrict the time allowed to complete the game to 30, 60 or 90 seconds.</li>
+		<li>Choose <span style="color: #5CA7C8; font-weight: bold;">How Many Shapes? </span>You can add complexity by increasing the number of shapes in each puzzle.</li>
+		<li>Click <span style="color: #5CA7C8; font-weight: bold;">Show Timer </span>This option allows you to see the timer to let you know how much time you have to play.</li>
+		<li>Click <span style="color: #5CA7C8; font-weight: bold;">Start</span></li>
 
 		<section style="width:100%; height:auto;">
-			<iframe src="https://www.stat2games.sites.grinnell.edu/games/tangrams.html" style= "width:150%; height: 700px; border:none"></iframe>
+			<iframe src="https://www.stat2games.sites.grinnell.edu/games/shapesplosion.html" style= "width:150%; height: 700px; border:none"></iframe>
 		</section>
-		<b>Note:</b> If you are unable to play the game, please try a different browser or go to the game website directly <a href="https://www.stat2games.sites.grinnell.edu/games/tangrams.html">Here</a>.
+		<b>Note:</b> If you are unable to play the game, please try a different browser or go to the game website directly <a href="https://www.stat2games.sites.grinnell.edu/games/shapesplosion.html">Here</a>.
 		
 		<br>
 
@@ -151,7 +161,7 @@
 		<br> <br>
 	<h3> Part 1C: Exploring Sample Data</h3>
                 
-		<p>Before playing more advanced levels, let's look at some data from a previous group of Players. To begin, set Tangrams App1 to <strong>Settings A</strong> (at left) and then answer the questions below.<br> </p>	
+		<p>Before playing more advanced levels, let's look at some data from a previous group of Players. To begin, set Shapesplosion App to <strong>Settings A</strong> (at left) and then answer the questions below.<br> </p>	
 
 	</section>
 	
@@ -165,10 +175,11 @@
 <br>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-		<!--<h3> <strong style = "font-size: 20px; padding-right: 10px">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
+		<h3> <strong style = "font-size: 20px; padding-right: 10px">Fun Fact:</strong><img src="images/FunFact.png" width="38" height="28" alt="fun fact icon"/></h3>
 		
 		
-		<p style="font-size:20px"> Several statistics techniques were originally developed to address agricultural research questions. Click <a href="https://www.stat.iastate.edu/department-history">here</a> to read more!</p> </aside>-->
+		<p style="font-size:20px"> Note that many psychologists would call this procedural knowledge instead of automatized behavior. 
+			Both are processes that can be done without conscience thought, but automatized behaviors are processes that can not be slowed down, do not decline with age, and show no gender differences.</p> </aside>
 </section>
 	
 <div id = "SecondSectionwrapper" style = "width:100%;height:auto">
@@ -177,10 +188,10 @@
 				<h3><strong>Settings A</strong></h3> 
 		
         <li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>Group ID:&nbsp; &nbsp;<em><strong>sample1</strong></em></a></li>
-		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>Remove Player ID:&nbsp; &nbsp;<em><strong>all</strong></em></a></li>
-		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>X Variable:&nbsp; &nbsp;<em><strong>Puzzle</strong></em></a></li>
+		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>Remove Player ID:&nbsp; &nbsp;<em><strong>None</strong></em></a></li>
+		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>X Variable:&nbsp; &nbsp;<em><strong>Matching Scheme</strong></em></a></li>
 		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>Y Variable:&nbsp; &nbsp;<em><strong>Time</strong></em></a></li>
-		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>Color By:&nbsp; &nbsp;<em><strong>Puzzle</strong></em></a></li>
+		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>Color By:&nbsp; &nbsp;<em><strong>Matching Scheme</strong></em></a></li>
 		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>Facet By:&nbsp; &nbsp;<em><strong>None</strong></em></a></li>
 		<li style="padding-left:0px; font-size:18px; margin-left: 30px"><a>Statistical Test:&nbsp; &nbsp;<em><strong>None</strong></em></a></li>
 		
@@ -191,7 +202,7 @@
 	</div>
 		
 	<div style = "width:60%;padding-left:1.5%;float:left">	
-	    <iframe src = "https://shiny.grinnell.edu/tangrams/" width="117%" height="1000px" style = "border:none"></iframe>
+	    <iframe src = "https://shiny.grinnell.edu/shapesplosion/" width="120%" height="1000px" style = "border:none"></iframe>
     </div>
 		
 	<div id = "mainwrapper" style = "width:75%; height: auto">
